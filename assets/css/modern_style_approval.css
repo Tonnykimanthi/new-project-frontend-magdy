@@ -1,0 +1,185 @@
+#returnCheck{
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+#rejectCheck{
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+#Signature{
+    display: flex;
+    justify-content: start;
+    display: none;
+}
+#Signature .img-fluid{
+    width: 160px;
+    margin-bottom: -20px;
+}
+.content .letter{
+    width: clamp(200px, 100%, 500px);
+    margin-inline: auto;
+    border: 2px solid rgb(219, 219, 219) !important;
+    border-radius: 5px;
+    padding: 15px 10px;
+}
+#submitCheck{
+    opacity: .5;
+    pointer-events: none;
+}
+.final-container .img-fluid{
+    width: 200px;
+    height: 150px;
+    margin-inline: auto;
+    background-color: rgb(196, 220, 255);
+    transition: .5s all;
+    border-radius: 5px;
+}
+.final-container .img-fluid img{
+    position: relative;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+.final-container .img-fluid:hover{
+    background-color: rgb(199, 196, 255);
+}
+.table-striped tbody tr{
+    font-size: 1rem;
+}
+.page-wrapper .table {
+    margin-bottom: 2.5rem !important;
+    margin-top: 1rem !important;
+    margin: auto;
+    width: 100%;
+}
+.page-wrapper{
+    text-align: start !important;
+}
+.content .container-fluid p{
+    text-align: start;
+    font-size: 1.4rem;
+}
+.d-flex.justify-content-between .text-start p{
+    font-weight: 600;
+}
+.modal .modal-body{
+    text-align: center;
+    border-radius: 250px;
+    padding: 30px 20px;
+}
+.modal .modal-content {
+    border-radius: 25px;
+    width: 600px;
+}
+.modal .modal-body h3{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    padding-block: 1rem 1.5rem;
+}
+.modal .modal-body .custom_check{
+    display: flex;
+    justify-content: space-around !important;
+    align-items: start !important;
+    margin-block-end: 3rem;
+    margin-block-start: 1rem;    
+    border-color: black;
+    font-size: 1.8rem;
+}
+.modal .modal-body .custom_check:nth-of-type(3){
+    margin-block-end: 2rem;
+}
+.modal .modal-body .modal-btn{
+    margin-block-end: 2rem;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    
+}
+.modal .modal-body .modal-btn .btn{
+    font-size: 2rem;
+    padding: 10px 25px;
+    font-weight: 700;
+    border-radius: 15px;
+    transition: .3s all;
+}
+.modal .modal-body .modal-btn .btn-primary{
+    margin-inline-end: 30px;
+}
+.custom_check p{
+    display: inline;
+    font-size: 15px;
+    width: 180%;
+    height: 20px;
+}
+.custom_check input{
+    width: 10%;
+    height: 20px;
+    margin-block-start: 6px;
+}
+
+.btn-card{
+    margin-block-start: 6rem ;
+    padding-block: 2rem !important;
+    max-width: 70%;
+    border-radius: 1rem;
+    margin-inline: auto;
+}
+.btn-card button{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-wrap: nowrap;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    min-width: 1rem;
+    max-width: 22rem;
+    padding: 1rem 1.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    background-color: rgb(196, 220, 255);
+    transition: .3s all;
+}
+.btn-card button .icon{
+    position: relative;
+    margin-inline-end: .2rem;
+    font-size: 1.5rem;
+}
+.btn-card button .icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn-card button .icon {
+    width: 30px;
+    height: 30px;
+}
+.content.container-fluid  .shadow-lg {
+    box-shadow: 0 0rem 4rem 8px rgba(0, 0, 0, .175) !important;
+}
+.textArea{
+    margin-block-end: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: start ;
+    flex-direction: column;
+    padding-inline-start: 2rem ;
+    width: 100%;
+}
+.textArea label{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.textArea textarea{
+    width: 95% !important;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    margin-block-start: .5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    transition: .3s all;
+}

@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Company</title>
+    
+    <!-- custom style -->
+    <link rel="stylesheet" href="../../../assets/css/KPI.css">
+    <link rel="stylesheet" href="../../../assets/css/dashboard.css">
+
+    <!-- google font Syne-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    
+    <!-- google font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- google font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../assets/css/all.min.css">
+
+</head>
+<body>
+    
+    <div id="sideBar" class="sidebar">
+        <ul>
+            <li >
+                <a href="#">
+                    <div class="image-dark home-dark active image">
+                        <img src="../../../assets/images/sign-in/Home@3x.png" alt="icon">
+                    </div>
+                    <div class="image-light home-light  image">
+                        <img src="../../../assets/images/sign-in/Home-light@3x-3.png" alt="icon">
+                    </div>
+                </a>
+                <span>Home</span>
+            </li>
+            <li class="open">
+                <a href="#">
+                    <div class="image-dark employee-dark  image">
+                        <img src="../../../assets/images/sign-in/Home@3x-5.png" alt="icon">
+                    </div>
+                    <div class="image-light employee-light active image">
+                        <img src="../../../assets/images/sign-in/Home-light@3x-2.png" alt="icon">
+                    </div>
+                </a>
+                <span>Requests</span>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="image-dark hrStaff-dark  active image">
+                        <img src="../../../assets/images/sign-in/Home@3x-1.png" alt="icon">
+                    </div>
+                    <div class="image-light  hrStaff-light image">
+                        <img src="../../../assets/images/sign-in/Home-light@3x-4.png" alt="icon">
+                    </div>
+                </a>
+                <span>HR Staff</span>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="image-dark calendar-dark active image">
+                        <img src="../../../assets/images/sign-in/Home@3x-4.png" alt="icon">
+                    </div>
+                    <div class="image-light  calendar-light image">
+                        <img src="../../../assets/images/sign-in/Home-light@3x-1.png" alt="icon">
+                    </div>
+                </a>
+                <span>Calendar</span>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="image-dark settings-dark active image">
+                        <img src="../../../assets/images/sign-in/Home@3x-2.png" alt="icon">
+                    </div>
+                    <div class="image-light  settings-light image">
+                        <img src="../../../assets/images/sign-in/Home-light@3x-5.png" alt="icon">
+                    </div>
+                </a>
+                <span>Settings</span>
+            </li>
+            
+        </ul>
+    </div>
+    <div id="openslider" class="openslider">
+        <div id="home" class="home  sectionslider">
+            <div class="title">
+                <h2 class="order-2 order-md-1">
+                    Home 
+                </h2>
+                <div class="image order-1 order-md-2">
+                    <img src="../../../assets/images/sign-in/Home-light@3x-3.png" alt="icon">
+                </div>
+            </div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div id="employee" class="employee open sectionslider">
+            <div class="title">
+                <h2 class="order-2 order-md-1">
+                    Requests
+                </h2>
+                <div class="image order-1 order-md-2">
+                    <img src="../../../assets/images/sign-in/Home-light@3x-2.png" alt="icon">
+                </div>
+            </div>
+            <ul>
+                <li><a class="open" href="index.html">KPI <span>12</span> </a></li>
+                <li><a href="#">Personal Certificate <span>1</span> </a></li>
+                <li><a href="#">Leave Requests <span>6</span> </a></li>
+                <li><a href="#">HR Expenses From <span>9</span> </a></li>
+                <li><a href="#">Jop Description <span>18</span> </a></li>
+            </ul>
+        </div>
+        <div id="hrStaff" class="hrStaff sectionslider">
+            <div class="title">
+                <h2 class="order-2 order-md-1" style="padding-inline-start: 15px;">
+                    HR Staff 
+                </h2>
+                <div class="image order-1 order-md-2">
+                    <img src="../../../assets/images/sign-in/Home-light@3x-1.png" alt="icon">
+                </div>
+            </div>
+            <ul>
+                <li><a href="#">Welcome Note <span>2</span> </a></li>
+                <li><a href="#">Separation Letter </a></li>
+                <li><a href="#">Confirmation Letter <span>12</span> </a></li>
+            </ul>
+        </div>
+        <div id="calendar"  class="calendar sectionslider">
+            <div class="title">
+                <h2 class="order-2 order-md-1">
+                    Calendar 
+                </h2>
+                <div class="image order-1 order-md-2">
+                    <img src="../../../assets/images/sign-in/Home-light@3x-4.png" alt="icon">
+                </div>
+            </div>
+            <ul>
+                <li><a href="#">Welcome Note <span>2</span> </a></li>
+                <li><a href="#">Separation Letter </a></li>
+                <li><a href="#">Confirmation Letter <span>12</span> </a></li>
+            </ul>
+        </div>
+        <div id="settings" class="settings sectionslider">
+            <div class="title">
+                <h2 class="order-2 order-md-1">
+                    Settings 
+                </h2>
+                <div class="image order-1 order-md-2">
+                    <img src="../../../assets/images/sign-in/Home-light@3x-5.png" alt="icon">
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a href="#" id="edit" >
+                        <div class="iconSetting" id="editicon" >
+                            <i class="fa-solid fa-camera-retro"></i>
+                        </div>
+                        <p id="editphoto" >
+                            Edit Photo
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="log" >
+                        <div class="iconSetting" id="iconlog" >
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                        </div>
+                        <p id="logout" >
+                            Log out
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <button id="openBtn" class="open-btn active" onclick="openSidebar()">
+        <i class="fa-solid fa-bars-staggered"></i>
+    </button>
+    <button id="closeBtn" class="close-btn " onclick="closeSidebar()">
+        <i class="fa-solid fa-arrow-left"></i>
+    </button>
+    <div class="overlayOpenSlider" id="overlayOpenSlider" onclick="closeSidebar()"></div>
+
+
+    <div id="mainContent" class="content content_responsev">
+        <header>
+            <div class="logo">
+                <div class="img-fluid">
+                    <img src="../../../assets/images/sign-in/Logos@3x.png" alt="logos">
+                </div>
+                <div class="titleLogo">
+                    <p>Name Company</p>
+                </div>
+            </div>
+            <div class="account">
+                <div class="image">
+                    <div class="ima-fluid">
+                        <img src="../../../assets/images/sign-in/1718183412_1694698427_Mohamed1.jpg" alt="Personal photo">
+                    </div>
+                </div>
+                <div class="name">
+                    <p>Ahmed Elsayed</p>
+                    <span>HR Supervisor</span>
+                </div>
+                <div class="arrow">
+                    <div class="ima-fluid">
+                        <img onclick="openEdit()" src="../../../assets/images/sign-in/Arrow@3x-1.png" alt="arrow-dowm">
+                    </div>
+                </div>
+                <div class="settingAccount">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="iconAccount">
+                                    <i class="fa-solid fa-camera-retro"></i>
+                                </div>
+                                <p>
+                                    Edit Photo
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="iconAccount" style="color: #EB0C0C ;">
+                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                </div>
+                                <p>
+                                    Log out
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+
+        <main>
+            <article class="container">
+                <section class="head">
+                    <div class="title">
+                        <a href="employee.html">
+                            <span>Employee</span>
+                        </a>
+                        <a href="index.html">
+                            <span>KPI</span>
+                        </a>
+                        <p>Dashboard</p>
+                        <span>|</span>
+                    </div>
+                    <a href="index.html" class="image">
+                        <div class="img-fluid">
+                            <img src="../../../assets/images/sign-in/Back@3x.png" alt="back arrow">
+                        </div>
+                    </a>
+                </section>
+                <section class="statistics labelSection">
+                    <p>Show Statistics</p>
+                </section>
+                <section class="statistics_Content ">
+                    <div class="headerTableStatistics d-flex align-items-center justify-content-between">
+                        <div class="statistics_Content_th">
+                            <p>Emp. Status</p>
+                        </div>
+                        <div class="statistics_Content_th">
+                            <p>Not Applied</p>
+                        </div>
+                        <div class="statistics_Content_th">
+                            <p>Pending First Approval</p>
+                        </div>
+                        <div class="statistics_Content_th">
+                            <p>Pending Final Approval</p>
+                        </div>
+                        <div class="statistics_Content_th">
+                            <p>Evaluated First Approval</p>
+                        </div>
+                        <div class="statistics_Content_th">
+                            <p>Evaluated Final Approval</p>
+                        </div>
+                        <div class="statistics_Content_th">
+                            <p>Returned From First Approval</p>
+                        </div>
+                        <div class="statistics_Content_th">
+                            <p>Returned From Final To First Approval</p>
+                        </div>
+                        <div class="statistics_Content_th">
+                            <p>Returned From Final Approval To Employee</p>
+                        </div>
+                        <div class="statistics_Content_th">
+                            <p>Total</p> 
+                        </div>
+                    </div>
+                    <div class="table_wrapper">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td  colspan="10" class="td_style head_Company">Name Company</td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style">Active</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style">Long Leave</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style">Annual Leave</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style">Emergency Leave</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style">Separated RP Valid Abroad</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style">Short Term</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style">Total</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td  colspan="10" class="td_style head_Company">Name Company</td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style">Active</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style">Long Leave</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style">Annual Leave</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style">Emergency Leave</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style">Separated RP Valid Abroad</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style">Short Term</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style">Total</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td  colspan="10" class="td_style head_Company">Name Company</td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style">Active</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style">Long Leave</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style">Annual Leave</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style">Emergency Leave</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style">Separated RP Valid Abroad</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style">Short Term</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style">Total</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section class="info upMargin">
+                    <div class="image">
+                        <div class="img-fluid">
+                            <img src="../../../assets/images/sign-in/1718183412_1694698427_Mohamed1.jpg" alt="Personal photo">
+                        </div>
+                    </div>
+                    <div class="content_Info">
+                        <div class="title">
+                            <p>Welcome, <span>Ahmed Muhammed Elsayed</span> to your 360HR paltform account</p>
+                        </div>
+                        <div class="infolist">
+                            <div class="row">
+                                <div class="col-4 col-md-3">
+                                    <h2>
+                                        Position\ Title
+                                    </h2>
+                                    <p>
+                                        HR Supervisor
+                                    </p>
+                                </div>
+                                <div class="col-4 col-md-3">
+                                    <h2>
+                                        Department\ Project
+                                    </h2>
+                                    <p>
+                                        HR Department
+                                    </p>
+                                </div>
+                                <div class="col-4 col-md-3">
+                                    <h2>
+                                        Total Years Of Experience
+                                    </h2>
+                                    <p>
+                                        1 years, 4 months
+                                    </p>
+                                </div>
+                                <div class="col-4 col-md-3">
+                                    <h2>
+                                        Employer Number
+                                    </h2>
+                                    <p>
+                                        101121
+                                    </p>
+                                </div>
+                                <div class="col-4 col-md-3">
+                                    <h2>
+                                        Year Of Evaluation
+                                    </h2>
+                                    <p>
+                                        2023
+                                    </p>
+                                </div>
+                                <div class="col-4 col-md-3">
+                                    <h2>
+                                        Project Number
+                                    </h2>
+                                    <p>
+                                        1103
+                                    </p>
+                                </div>
+                                <div class="col-4 col-md-3">
+                                    <h2>
+                                        Project Number
+                                    </h2>
+                                    <p>
+                                        1103
+                                    </p>
+                                </div>
+                                <div class="col-4 col-md-3">
+                                    <h2>
+                                        Date Of Joining
+                                    </h2>
+                                    <p>
+                                        1\3\2023
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="company_section upMargin">
+                    <div class="row">
+                        <div class="col-12 col-md-4 company_card ">
+                            <div class="company_logo d-flex justify-content-between align-items-center">
+                                <div class="image Name_Company">
+                                    <div class="img-fluid">
+                                        <img src="../../../assets/images/logos/logo.png" alt="logo">
+                                    </div>
+                                </div>
+                                <div class="total_Employees">
+                                    <p>Total Employees</p>
+                                    <span>
+                                        1205
+                                        <div class="icon_total_employees d-inline">
+                                            <i class="fa-solid fa-users"></i>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="company_content">
+                                <div class="submitted company_content_respon  d-flex align-items-center">
+                                    <div class="number_applied_section position-relative">
+                                        <svg class="progress-ring" width="100" height="100">
+                                            <circle class="progress-ring__circle" stroke="#42b26b" stroke-width="6" fill="transparent" r="45" cx="50" cy="50"/>
+                                        </svg>
+                                        <div class="number_applied" data-value="871">871</div>
+                                    </div>
+                                    <div class="text_company">
+                                        <h3>Submitted</h3>
+                                        <div class="num_pending">
+                                            <div class="num_pending_item d-flex justify-content-between ">
+                                                <p>Pending At First Approval</p>
+                                                <span>
+                                                    6
+                                                </span>
+                                            </div>
+                                            <div class="num_pending_item d-flex justify-content-between ">
+                                                <p>Pending At Final Approval</p>
+                                                <span>
+                                                    15
+                                                </span>
+                                            </div>
+                                            <div class="num_pending_item d-flex justify-content-between ">
+                                                <p>Evaluated</p>
+                                                <span>
+                                                    866
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="line">
+                                <div class="notApplied company_content_respon  d-flex align-items-center">
+                                    <div class="number_applied_section position-relative">
+                                        <svg class="progress-ring" width="100" height="100">
+                                            <circle class="progress-ring__circle" stroke="#e1322d" stroke-width="6" fill="transparent" r="45" cx="50" cy="50"/>
+                                        </svg>
+                                        <div class="number_applied not_number_applied" data-value="125">213</div>
+                                    </div>
+                                    <div class="text_company">
+                                        <h3>Not Applied</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 company_card ">
+                            <div class="company_logo d-flex justify-content-between align-items-center">
+                                <div class="image">
+                                    <div class="img-fluid">
+                                        <img src="../../../assets/images/logos/logo.png" alt="logo">
+                                    </div>
+                                </div>
+                                <div class="total_Employees">
+                                    <p>Total Employees</p>
+                                    <span>
+                                        629
+                                        <div class="icon_total_employees d-inline">
+                                            <i class="fa-solid fa-users"></i>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="company_content">
+                                <div class="submitted company_content_respon d-flex align-items-center">
+                                    <div class="number_applied_section position-relative">
+                                        <svg class="progress-ring" width="100" height="100">
+                                            <circle class="progress-ring__circle" stroke="#42b26b" stroke-width="6" fill="transparent" r="45" cx="50" cy="50"/>
+                                        </svg>
+                                        <div class="number_applied" data-value="502">502</div>
+                                    </div>
+                                    <div class="text_company">
+                                        <h3>Submitted</h3>
+                                        <div class="num_pending">
+                                            <div class="num_pending_item d-flex justify-content-between ">
+                                                <p>Pending At First Approval</p>
+                                                <span>
+                                                    10
+                                                </span>
+                                            </div>
+                                            <div class="num_pending_item d-flex justify-content-between ">
+                                                <p>Pending At Final Approval</p>
+                                                <span>
+                                                    12
+                                                </span>
+                                            </div>
+                                            <div class="num_pending_item d-flex justify-content-between ">
+                                                <p>Evaluated</p>
+                                                <span>
+                                                    480
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="line">
+                                <div class="notApplied company_content_respon d-flex align-items-center">
+                                    <div class="number_applied_section position-relative">
+                                        <svg class="progress-ring" width="100" height="100">
+                                            <circle class="progress-ring__circle" stroke="#e1322d" stroke-width="6" fill="transparent" r="45" cx="50" cy="50"/>
+                                        </svg>
+                                        <div class="number_applied not_number_applied" data-value="250">250</div>
+                                    </div>
+                                    <div class="text_company">
+                                        <h3>Not Applied</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 company_card ">
+                            <div class="company_logo d-flex justify-content-between align-items-center">
+                                <div class="image">
+                                    <div class="img-fluid">
+                                        <img src="../../../assets/images/logos/logo.png" alt="logo">
+                                    </div>
+                                </div>
+                                <div class="total_Employees">
+                                    <p>Total Employees</p>
+                                    <span>
+                                        216
+                                        <div class="icon_total_employees d-inline">
+                                            <i class="fa-solid fa-users"></i>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="company_content">
+                                <div class="submitted company_content_respon d-flex align-items-center">
+                                    <div class="number_applied_section position-relative">
+                                        <svg class="progress-ring" width="100" height="100">
+                                            <circle class="progress-ring__circle" stroke="#42b26b" stroke-width="6" fill="transparent" r="45" cx="50" cy="50"/>
+                                        </svg>
+                                        <div class="number_applied" data-value="164">164</div>
+                                    </div>
+                                    <div class="text_company">
+                                        <h3>Submitted</h3>
+                                        <div class="num_pending">
+                                            <div class="num_pending_item d-flex justify-content-between ">
+                                                <p>Pending At First Approval</p>
+                                                <span>
+                                                    3
+                                                </span>
+                                            </div>
+                                            <div class="num_pending_item d-flex justify-content-between ">
+                                                <p>Pending At Final Approval</p>
+                                                <span>
+                                                    1
+                                                </span>
+                                            </div>
+                                            <div class="num_pending_item d-flex justify-content-between ">
+                                                <p>Evaluated</p>
+                                                <span>
+                                                    160
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="line">
+                                <div class="notApplied company_content_respon d-flex align-items-center">
+                                    <div class="number_applied_section position-relative">
+                                        <svg class="progress-ring" width="100" height="100">
+                                            <circle class="progress-ring__circle" stroke="#e1322d" stroke-width="6" fill="transparent" r="45" cx="50" cy="50"/>
+                                        </svg>
+                                        <div class="number_applied not_number_applied" data-value="125">125</div>
+                                    </div>
+                                    <div class="text_company">
+                                        <h3>Not Applied</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="filter_section upMargin">
+                    <form>
+                        <div class="row gy-4">
+                            <div class="col-12 col-md-4 selectAffter">
+                                <select class="form-control" name="select state"  id="state">
+                                    <option value="" disabled selected>Select State</option>
+                                    <option value="Pending">Pending</option>
+                                    <option value="Returned">Returned</option>
+                                    <option value="Evaluated">Evaluated</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-4 selectAffter">
+                                <select class="form-control" name="select Entity" id="Entity">
+                                    <option value="" disabled selected>Select Entity</option>
+                                    <option value="Name Company">Name Company</option>
+                                    <option value="Name Company">Name Company</option>
+                                    <option value="Name Company">Name Company</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-4 selectAffter">
+                                <select class="form-control" name="select Project" id="Project">
+                                    <option value="" disabled selected>Select Project</option>
+                                    <option value="HR Department">HR Department</option>
+                                    <option value="General Office">General Office</option>
+                                    <option value="Transport">Transport</option>
+                                    <option value="Tender Department">Tender Department</option>
+                                    <option value="Automation Unit">Automation Unit</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-4 selectAffter">
+                                <select class="form-control" name="Employee Status" id="Status">
+                                    <option value="" disabled selected>Employee Status</option>
+                                    <option value="Active">Active</option>
+                                    <option value="Long Leave">Long Leave</option>
+                                    <option value="Annual Leave">Annual Leave</option>
+                                    <option value="Emergency Leave">Emergency Leave</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <input type="date" class="form-text" placeholder="From" name="FromDate" id="FromDate">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <input type="date" class="form-text inputTwo" placeholder="To" class="inputTwo" name="ToDate" id="ToDate">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="button_Search">
+                        <button class="btn FilterBtn Filter">
+                            Filter
+                        </button>
+                        <button class="btn FilterBtn Reset">
+                            Reset
+                        </button>
+                    </div>
+                </section>
+                <section class="table_reasons_section upMargin border-white table_section table_responsev">
+                    <table class="w-100">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Project</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Entity</th>
+                                <th>Control</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="Evaluated" style="display:table-row ;">
+                                <td>Mohamed Ahmed Mohamed Ahmed Mohamed Ahmed</td>
+                                <td>H2@NameCompany.com</td>
+                                <td>HR Department</td>
+                                <td>2023/8/04</td>
+                                <td>
+                                    <div class="statu">
+                                        <div class="image">
+                                            <div class="img-fluid">
+                                                <img src="../../../assets/images/sign-in/Evaluated@3x.png" alt="Evaluated">
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Evaluated
+                                        </p>
+                                    </div>
+                                </td>
+                                <td>Name Company</td>
+                                <td>
+                                    <div class="icon_table">
+                                        <i onclick="control(oneBox)" class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                    <div class="box  oneBox">
+                                        <a href="">
+                                            <button>Show</button>
+                                        </a>
+                                        <button class="cancel CancelBtn" >Cancel</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="Pending" style="display:table-row ;">
+                                <td>Mohamed Ahmed Mohamed Ahmed Mohamed Ahmed</td>
+                                <td>H2@NameCompany.com</td>
+                                <td>HR Department</td>
+                                <td>2023/8/04</td>
+                                <td>
+                                    <div class="statu">
+                                        <div class="image">
+                                            <div class="img-fluid">
+                                                <img src="../../../assets/images/sign-in/Pending@3x.png" alt="Pending">
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Pending
+                                        </p>
+                                    </div>
+                                </td>
+                                <td>Name Company</td>
+                                <td>
+                                    <div class="icon_table">
+                                        <i onclick="control(twoBox)" class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                    <div class="box  twoBox">
+                                        <a href="staff_Performance_dan.html">
+                                            <button>Evaluated</button>
+                                        </a>
+                                        <button class="returnDan">Returned To Sender</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="Returned" style="display:table-row ;">
+                                <td>Mohamed Ahmed Mohamed Ahmed Mohamed Ahmed</td>
+                                <td>H2@NameCompany.com</td>
+                                <td>HR Department</td>
+                                <td>2023/8/04</td>
+                                <td>
+                                    <div class="statu">
+                                        <div class="image">
+                                            <div class="img-fluid">
+                                                <img src="../../../assets/images/sign-in/Returned@3x.png" alt="Returned">
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Returned
+                                        </p>
+                                    </div>
+                                </td>
+                                <td>Name Company</td>
+                                <td>
+                                    <div class="icon_table">
+                                        <i onclick="control(treeBox)" class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                    <div class="box  treeBox">
+                                        <a href="staff_Performance_dan.html">
+                                            <button>Show</button>
+                                        </a>
+                                        <button class="returnsta">Returned Reasons</button>
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="Evaluated" style="display:table-row ;">
+                                <td>Mohamed Ahmed Mohamed Ahmed Mohamed Ahmed</td>
+                                <td>H2@NameCompany.com</td>
+                                <td>HR Department</td>
+                                <td>2023/8/04</td>
+                                <td>
+                                    <div class="statu">
+                                        <div class="image">
+                                            <div class="img-fluid">
+                                                <img src="../../../assets/images/sign-in/Evaluated@3x.png" alt="Evaluated">
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Evaluated
+                                        </p>
+                                    </div>
+                                </td>
+                                <td>Name Company</td>
+                                <td>
+                                    <div class="icon_table">
+                                        <button>At Final Approval</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="overlay overlayKpi" onclick="overlayBoxTable()"></div>
+
+                </section>
+            </article>
+        </main>
+
+    </div>
+    <div class="overlayBoxReturnDan "></div>
+    <div class="boxReturnDan ">
+        <div class="titleBox">
+            <h2>
+                (KPI) Return Request
+            </h2>
+        </div>
+        <div class="suptitleBox">
+            <p>
+                Here are six common reasons to cancel a KPI, and you can select one or more as guides for employees to improve: 
+            </p>
+        </div>
+        <form class="FormboxReturnDan FormboxDan">
+            <div class="form-group">
+                <input type="checkbox" name="reason" id="reasonOne">
+                <label for="reasonOne">
+                    Weighting Update: If there is a need to change the importance or weighting assigned to the KPI in the overall evaluation.
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="reason" id="reasonTwo">
+                <label for="reasonTwo">
+                    Need for Adjustments: When significant changes or modifications are required to make the KPI more effective or aligned with goals.
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="reason" id="reasonThree">
+                <label for="reasonThree">
+                    Incorrect Manager Approval: If the KPI was not approved or authorized by the responsible manager.                </label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="reason" id="reasonFour">
+                <label for="reasonFour">
+                    Unrealistic Results: When the expected results set for the KPI are impractical or require adjustments.
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="reason" id="reasonFive">
+                <label for="reasonFive">
+                    Unclear Objectives: If the KPI lacks clear and well-defined objectives that can be effectively measured.
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="reason" id="reasonSix">
+                <label for="reasonSix">
+                    Outdated: When the KPI is no longer aligned with the objectives.
+                </label>
+            </div>
+        </form>
+        <div class="reasonSpecify">
+            <div class="titleSpecify">
+                <p>
+                    Reasons: <span>(Specify)</span>
+                </p>
+            </div>
+            <textarea name="areaReasonSpecify" id="areaReasonSpecify" placeholder="Type Other Reason"></textarea>
+        </div>
+        <div class="buttonReason">
+            <button class="btn ReasonBtn Return">
+                Return
+            </button>
+        </div>
+    </div>
+    <div class="boxReturnDan boxReturnsta ">
+        <div class="titleBox">
+            <h2>
+                (KPI) Return Request
+            </h2>
+        </div>
+        <div class="suptitleBox">
+            <p>
+                Here are six common reasons to cancel a KPI, and you can select one or more as guides for employees to improve: 
+            </p>
+        </div>
+        <form class="FormboxReturnDan FormboxReturnsta">
+            <div class="form-group">
+                <input type="checkbox" name="reasonSta" checked id="reasonStaOne">
+                <label for="reasonStaOne">
+                    Weighting Update: If there is a need to change the importance or weighting assigned to the KPI in the overall evaluation.
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="reasonSta" id="reasonStaTwo">
+                <label for="reasonStaTwo">
+                    Need for Adjustments: When significant changes or modifications are required to make the KPI more effective or aligned with goals.
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="reasonSta" checked id="reasonStaThree">
+                <label for="reasonStaThree">
+                    Incorrect Manager Approval: If the KPI was not approved or authorized by the responsible manager.                </label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="reasonSta" id="reasonStaFour">
+                <label for="reasonStaFour">
+                    Unrealistic Results: When the expected results set for the KPI are impractical or require adjustments.
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="reasonSta" checked id="reasonStaFive">
+                <label for="reasonStaFive">
+                    Unclear Objectives: If the KPI lacks clear and well-defined objectives that can be effectively measured.
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="reasonSta" id="reasonStaSix">
+                <label for="reasonStaSix">
+                    Outdated: When the KPI is no longer aligned with the objectives.
+                </label>
+            </div>
+        </form>
+        <div class="reasonSpecify">
+            <div class="titleSpecify">
+                <p>
+                    Reasons: <span>(Specify)</span>
+                </p>
+            </div>
+            <p name="areaReasonSpecify" class="textareaPra" id="areaReasonSpecify" placeholder="Type Other Reason">
+                input
+            </p>
+        </div>
+        
+    </div>
+    <div class="boxReturnDan boxCancelDan">
+        <div class="titleBox">
+            <h2>
+                (KPI) Cancellation Criteria
+            </h2>
+        </div>
+        <div class="suptitleBox">
+            <p>
+                Here are six common reasons to return to sender, and you can select one or more as guides for employees to improve:
+            </p>
+        </div>
+        <form class="FormboxReturnDan FormboxCancelDan">
+            <div class="form-group">
+                <input type="checkbox" name="Cancel" id="CancelOne">
+                <label for="CancelOne">
+                    Weighting Update: If there is a need to change the importance or weighting assigned to the KPI in the overall evaluation.
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="Cancel" id="CancelTwo">
+                <label for="CancelTwo">
+                    Need for Adjustments: When significant changes or modifications are required to make the KPI more effective or aligned with goals.
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="Cancel" id="CancelThree">
+                <label for="CancelThree">
+                    Incorrect Manager Approval: If the KPI was not approved or authorized by the responsible manager.                </label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="Cancel" id="CancelFour">
+                <label for="CancelFour">
+                    Unrealistic Results: When the expected results set for the KPI are impractical or require adjustments.
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="Cancel" id="CancelFive">
+                <label for="CancelFive">
+                    Unclear Objectives: If the KPI lacks clear and well-defined objectives that can be effectively measured.
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="Cancel" id="CancelSix">
+                <label for="CancelSix">
+                    Outdated: When the KPI is no longer aligned with the objectives.
+                </label>
+            </div>
+        </form>
+        <div class="reasonSpecify">
+            <div class="titleSpecify">
+                <p>
+                    Other Reason: <span>(Specify)</span>
+                </p>
+            </div>
+            <textarea name="areaReasonSpecify" id="areaReasonSpecify" placeholder="Type Other Reason"></textarea>
+        </div> 
+        <div class="buttonReason">
+            <button class="btn CancelBoxBtn Return">
+                Cancel KPI
+            </button>
+        </div>
+    </div>
+    <!-- bootstrap -->
+    <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../assets/js/all.min.js"></script>
+
+    <!-- FullCalendar JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/index.global.js" integrity="sha512-3I+0zIxy2IkeeCvvhXUEu+AFT3zAGuHslHLDmM8JBv6FT7IW6WjhGpUZ55DyGXArYHD0NshixtmNUWJzt0K32w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- custom javaScript -->
+    <script src="../../../assets/js/KPI.js"></script>
+    <script src="../../../assets/js/dashboard.js"></script>
+    <script src="../../../assets/js/KPI_dashboard.js"></script>
+
+</body>
+</html>

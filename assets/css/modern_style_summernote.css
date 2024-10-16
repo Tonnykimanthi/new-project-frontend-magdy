@@ -1,0 +1,223 @@
+
+.footer_letter{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.body .container  hr {
+    margin-top: 0px !important;
+    max-width: 80%;
+    background-color: #060a0c;
+}
+.upload-form{
+    padding: 20px 5px !important;
+}
+.summernote_customize{
+    margin-block-end: 5rem;
+}
+.summernote_card{
+    padding: 1rem;
+}
+.summernote_head{
+    padding-block-start: 2rem;
+    padding-block-end: 1rem;
+}
+.note-editor.note-airframe .note-statusbar .note-resizebar, .note-editor.note-frame .note-statusbar .note-resizebar {
+    padding-top: 1px !important;
+    height: 2.5rem !important;
+    width: 100%;
+    cursor: ns-resize;
+}
+.note-editor.note-airframe .note-statusbar .note-resizebar .note-icon-bar, .note-editor.note-frame .note-statusbar .note-resizebar .note-icon-bar{
+    border-top: .15rem solid rgb(0, 0, 0) !important;
+    margin-block: .4rem !important;
+}
+.drop-zone {
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.drop-zone i {
+    font-size: 7rem;
+    margin-block-end: 2rem;
+}
+.drop-zone p {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.drop-zone input {
+    display: none;
+}
+.preview-container, .final-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.preview, .final-image {
+    position: relative;
+    margin: 10px;
+}
+.preview img, .final-image img {
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+}
+.preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.preview {
+    position: relative;
+    margin: 9px;
+}
+.preview img {
+    max-width: 99px;
+    max-height: 99px;
+    display: block;
+}
+.preview .delete-btn,
+.delete-btn  {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: grid;
+    place-content: center;
+    line-height: 50px;
+}
+.custom-modal{
+    padding-inline: 1.5rem !important;
+}
+.final-container{
+    position: relative;
+    display: flex;
+    justify-content: start;
+}
+.final-container-title:nth-child(1) {
+    margin-block-start: 0rem !important;
+}
+.final-container-title {
+    margin-block-start: 4rem !important;
+    margin-block-end: 2rem !important;
+}
+.final-container-title h2{
+    margin-block-end: 1rem !important;
+    font-size: 3rem !important;
+}
+.body .container  hr{
+    margin-top: 50px;
+    max-width: 80%;
+    background-color: #060a0c;
+}
+.note-editor .note-editable {
+    direction: ltr;
+    text-align: start;
+}
+.note-editor .note-editing-area .note-editable {
+    font-size: 20px; 
+}
+.note-editor .note-toolbar .note-btn-group .note-btn {
+    font-size: 16px;
+    padding: 5px 10px;
+}
+.note-editor .note-toolbar .note-btn-group .note-btn i {
+    margin-right: 5px;
+}
+.btn_div{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-block-end: 10rem;
+}
+.btn_div .btn{
+    min-width: 10rem;
+    width: 15rem;
+    font-size: 2.5rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.579);
+}
+.btn_div i{
+    font-size: 2rem;
+    margin-inline-end: .9rem;
+}
+.btn_back i{
+    font-size: 2.5rem;
+}
+.final-container-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.final-container-title .final-container-icon{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.final-container-title .final-container-icon .icon{
+    font-size: 2.5rem;
+    margin-inline-end: 1rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: .5rem;
+    position: relative;
+}
+.final-container-title .final-container-icon .icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.final-container-title .final-container-icon .add_event{
+    font-size: 2rem;
+    padding-inline: 2rem;
+    transition: 0.5s all;
+}
+.modal-body .letter_view #Signature{
+    width: 30%;
+}
+
+.page-wrapper .table{
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+}
+.table-summernote tbody tr td{
+    font-size: 1rem;
+    
+}
+#letterContainerText .table-responsive .table-summernot{
+    font-size: 1rem;
+
+}
+@media (max-width: 576px) {
+    .summernote_head{
+        padding-block-start: 5rem;
+        padding-block-end: 2rem;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .summernote_head{
+        padding-block-start: 5rem;
+        padding-block-end: 2rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .summernote_head{
+        padding-block-start: 5rem;
+        padding-block-end: 2rem;
+    }
+}

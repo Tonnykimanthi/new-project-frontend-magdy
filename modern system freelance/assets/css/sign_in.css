@@ -1,0 +1,1548 @@
+:root{
+    /* color */
+    --main-color: #0F3464;
+    --main-blue-color: #1758ad;
+    --main-light-color: #e7faff;
+    --danger-color: #EB0C0C;
+    --success-color: #61F899 ;
+    --success-dark-color:#42b26b ;
+    --orange-color: #e1322d;
+    --orange-light-color: #f06561;
+    --gray-color: #696969;
+    --gray-light-color: #f4f0f0;
+    --white-text-color: #D9D9D9;
+    --white-color: #fff;
+    --dark-color: #181818;
+
+    /* radius */
+    --radius-full: 50%;
+    --radius-border: 50rem;
+}
+
+body{
+    height: 100%;
+    overflow: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Syne", sans-serif;
+}
+/* header section */
+
+header .img-fluid img{
+    margin-block-start:63px ;
+    width: 167px;
+}
+
+/* header section */
+
+/* hero section */
+.hero{
+    height: calc(100vh - 292px);
+}
+.hero .top{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.hero .top .content{
+    margin-block-start: 70px;
+    width: 40%;
+}
+.hero .top .content .img-fluid img{
+    margin-left: -102px;
+    margin-bottom: -36px;
+    width: 450px;
+}
+.hero .top .content .title{
+    font-family: "Poppins";
+    color: var(--main-color);
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 37px;
+}
+.hero .top .content .subtitle{
+    font-family: "Poppins";
+    color: var(--gray-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    padding-block: 45px ;
+}
+.hero .top .content .btn{
+    background-color: var(--main-color);
+    color: var(--white-color);
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 13px;
+    border-radius: var(--radius-border);
+    padding: 30px 25px;
+}
+.hero .top .image{
+    position: relative;
+    overflow: hidden;
+    width: 60%;
+} 
+.hero .top .image .img-fluid{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+.hero .top .image .img-fluid img{
+    width: 780px;
+}
+
+.hero .top .image .span{
+    font-size: 20px;
+    position: absolute;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 700;
+    line-height: 25px;
+    padding: 10px;
+    width: fit-content;
+    color: var(--main-color);
+}
+.hero .top .image .text-1{
+    bottom: 380px;
+    left: 42px;
+    transform: rotate(-32.61deg);
+    background-color: #CD222E33;
+}
+.hero .top .image .text-2{
+    bottom: 415px;
+    right: 85px;
+    transform: rotate(15deg);
+    background-color: #54DAFF24;
+}
+.hero .top .image .text-3{
+    bottom: 156px;
+    right: -18px;
+    transform: rotate(68deg);
+    background-color: #54DAFF24;
+}
+.hero .down{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 187px;
+    background-color: var(--main-light-color);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+}
+.hero .down p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-family: "Poppins", sans-serif !important;
+}
+
+
+/* hero section */
+/* popup section */
+
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    width: 60%;
+    height: 65%;
+    background-color:var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9;
+    transition: all .5s ease-in-out;
+}
+.popup.active{
+    transform: translate(-50%, -50%);
+}
+.popup .left{
+    position: relative;
+    width: 35%;
+    height: 100%;
+    background-color: var(--white-text-color);
+}
+.popup .left .image{
+    position: relative;
+}
+.popup .left .image img{
+    width: 100.5%;
+}
+.popup .left .image-loge {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 115%;
+}
+.popup .left p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 120px;
+}
+@media (min-width: 1601px){
+    .popup .left{
+        position: relative;
+        width: 25%;
+    }
+    .popup .left p{
+        font-size: 15px;
+        margin-top: 60px;
+    }
+}
+
+/* popup section signin */
+
+.popup .signin{
+    position: relative;
+    width: 70%;
+    height: 100%;
+}
+.popup .signin .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 30px 32px;
+    margin-inline: 21px;
+}
+.popup .signin .head .nav{
+    color: var(--white-text-color);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 13px;
+    text-align: left;
+    transition: all .5s ease-in-out;
+}
+.popup .signin .head .nav p{
+    padding-inline: 3px;
+    cursor: pointer;
+    color: var(--white-text-color);
+}
+.popup .signin .head .nav p.active{
+    color: var(--dark-color);
+    transition: all .5s ease-in-out;
+}
+.popup .signin .head .nav .signdiff{
+    position: relative;
+}
+.popup .signin .head .nav .signdiff.active{
+    transition: all .5s ease-in-out;
+}
+.popup .signin .head .nav .signdiff.active::after{
+    content:"";
+    position: absolute;
+    left: 4px;
+}
+.popup .signin .head .nav .signdiff::after{
+    content:"";
+    position: absolute;
+    bottom: -4px;
+    left: 63px;
+    background-color: var(--dark-color);
+    width: 65%;
+    height: 2px;
+    transition: all .5s ease-in-out;
+}
+.popup .signin .head .img-fluid img{
+    width: 35px;
+}
+.popup .signin .content{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.popup .signin .content .text{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    color: var(--main-color);
+}
+.popup .signin .content .card-list{
+    width: 65%;
+}
+.popup .signin .content .card-list .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-block: 20px;
+    border: 1px solid var(--white-text-color);
+    border-radius: 10px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.popup .signin .content .card-list .card:hover{
+    border: 1px solid var(--main-blue-color);
+    color: var(--main-blue-color);
+
+}
+.popup .signin .content .card-list .card .image{
+    width: 30%;
+}
+.popup .signin .content .card-list .card .image img{
+    width: 65px;
+}
+.popup .signin .content .card-list .card .content{
+    width: 70%;
+    padding-block-start: 12px;
+    padding-inline-start: 12px;
+    align-self: center;
+}
+.popup .signin .content .card-list .card .content p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 13px;
+    align-self: start;
+}
+.popup .signin .content .down .new{
+    position: relative;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 13px;
+    text-align: center;
+    margin-block-start:12px ;
+    pointer-events: none;
+    transition: all .2s ease-in-out;
+}
+.popup .signin .content .down .new::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--dark-color);
+}
+.popup .signin .content .down button{
+    background-color: var(--success-color);
+    color: var(--white-color);
+    border-radius: var(--radius-border);
+    margin-inline-start:10px ;
+    padding: 4px 0px;
+    height: fit-content;
+    transition: all .2s ease-in-out;
+}
+.popup .signin .content .down button:hover{
+    background-color: var(--success-dark-color);
+}
+.popup .signin .content .down .content{
+    font-family: "poppins";
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    padding: 0px 4px;
+}
+.popup .signin .content .down .img-fluid img{
+    width: 16px;
+    margin-inline-start:1px ;
+}
+.popup .signin .content .down button:hover .img-fluid img{
+    animation: updown 2.5s infinite ease-in-out;
+}
+@keyframes updown {
+    0%{
+        transform: translateY(0px);
+    }
+    33%{
+        transform: translateY(-3px);
+    }
+    66%{
+        transform: translateY(3px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.popup .signin .diff{
+    transform: scale(1) translateX(0px);
+    z-index: 9 !important;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+.popup .signin .diff.active{
+    transform: scale(.9) translateX(-120px);
+    opacity: 0;
+    z-index: 7 !important;
+    transition: all 0.5s ease-in-out;
+}
+.popup .signin .medgulfSignin,
+.popup .signin .TragsSignin,
+.popup .signin .forgetSignin,
+.popup .signin .EngineeringSignin{
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    z-index: -1;
+    transform: scale(.9) translateX(-120px);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.popup .signin .forgetSignin{
+    top: 50%;
+    transform: translateX(-420px);
+}
+.popup .signin .medgulfSignin.active,
+.popup .signin .TragsSignin.active,
+.popup .signin .forgetSignin.active,
+.popup .signin .EngineeringSignin.active{
+    transform: scale(1) translateX(-50%);
+    opacity: 1;
+    z-index: 9;
+    transition: all 0.5s ease-in-out;
+}
+.popup .signin .forgetSignin.active{
+    transform: translate(-50%, -50%);
+}
+.popup .signin .signLogo .image{
+    margin-block: 15px 20px;
+}
+.popup .signin .signLogo .image img{
+    width: 72px;
+}
+.popup .signin .signLogo .content .error{
+    color: var(--danger-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .19s ease-in-out;
+}
+.popup .signin .signLogo .content .error.errorr{
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s ease-in-out;
+}
+.popup .signin .signLogo .content form{
+    width: 50%;
+    margin-top: -70px;
+    transition: all .3s ease-in-out;
+}
+.popup .signin .signLogo .content .formlogo.errorr{
+    margin-top: -10px !important;
+    transition: all .3s ease-in-out;
+}
+.popup .signin .signLogo .content .formlogo.errorr input{
+    border: 1px solid var(--danger-color);
+}
+.popup .signin .signLogo .content .formlogo.errorr input::placeholder{
+    color: var(--danger-color);
+}
+.popup .signin .signLogo .content form input{
+    margin-block: 12px;
+    border: 1px solid var(--main-color);
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+}
+.popup .signin .signLogo .content form input::placeholder{
+    color: var(--gray-color);
+}
+.popup .signin .signLogo .content form .password{
+    position: relative;
+}
+.popup .signin .signLogo .content form .password .iconPassword{
+    content: "";
+    position: absolute;
+    top: 52%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: var(--gray-color);
+    opacity: 0;
+    z-index: -1;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.popup .signin .signLogo .content form .password .iconPasswordOpen{
+    right: 11px;
+}
+.popup .signin .signLogo .content form .password .iconPassword.active{
+    opacity: 1;
+    z-index: 3;
+    transition: all .3s ease-in-out;
+}
+.popup .signin .signLogo .content .forget p{
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 13px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.popup .signin .signLogo .content .forget p:hover{
+    color: var(--main-blue-color);
+} 
+.popup .signin .signLogo .content .forget p::after{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    background-color: var(--dark-color);
+    width: 100%;
+    height: 1px;
+    transition: all 0.3s ease-in-out;
+}
+.popup .signin .signLogo .content .forget p:hover:after{
+    background-color: var(--main-blue-color);
+}
+.popup .signin .signLogo .content .btn{
+    background-color: var(--main-blue-color);
+    color: var(--white-color);
+    border-radius: var(--radius-border);
+    padding: 10px 20px;
+    transition: all .3s ease-in-out;
+    margin-top: 75px ;
+}
+
+.popup .signin .signLogo .content .btn.errorr{
+    margin-top: 15px !important;
+    transition: all .3s ease-in-out;
+}
+.popup .signin .signLogo .content .btn:hover{
+    background-color: var(--main-color);
+}
+.popup .signin .signLogo .content .btn p{
+    font-family: "poppins";
+    font-size: 18px;
+    font-weight: 600;
+    margin-inline-end: 8px;
+    margin-bottom: 0;
+}
+.popup .signin .signLogo .content .btn{
+    font-size: 20px;
+}
+.popup .signin .signLogo .content .down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    margin-block-start: 15px;
+}
+.popup .signin .signLogo .content .down .new {
+    position: relative;
+    font-size: 11px;
+    font-weight: 500;
+    text-align: center;
+    pointer-events: none;
+    transition: all .2s ease-in-out;
+}
+.popup .signin .signLogo .content .down .new ::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--dark-color);
+}
+.popup .signin .signLogo .content .down button{
+    background-color: var(--success-color);
+    color: var(--white-color);
+    border-radius: var(--radius-border);
+    margin-block-start:0;
+    padding: 0px;
+    height: fit-content;
+    transition: all .2s ease-in-out;
+}
+.popup .signin .signLogo .content .down button:hover{
+    background-color: var(--success-dark-color);
+}
+.popup .signin .signLogo .content .down .content{
+    font-family: "poppins";
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    padding: 0px 4px;
+    margin-block: auto;
+}
+.popup .signin .signLogo .content .down .img-fluid img{
+    width: 16px;
+    margin-inline:2px ;
+}
+.popup .signin .signLogo .content .down button:hover .img-fluid img{
+    animation: updown 2.5s infinite ease-in-out;
+}
+.popup .signin .forget .content form{
+    width: 50%;
+}
+.popup .signin .forget .content form input{
+    margin-block: 12px;
+    border: 1px solid var(--main-color);
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+}
+.popup .signin .forget .content form input::placeholder{
+    color: var(--gray-color);
+}
+.popup .signin .forget .content button{
+    background-color: var(--main-blue-color);
+    border-radius: var(--radius-border);
+    color: var(--white-color);
+    margin-block-start: 15px;
+}
+.popup .signin .forget .content button p{
+    margin-inline-end: 10px;
+    margin-bottom: 0;
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+.popup .signin .forget .first,
+.popup .signin .forget .sec,
+.popup .signin .forget .Thir{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: scale(.9) translate(-40%, -50%);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.popup .signin .forget .first.active,
+.popup .signin .forget .sec.active,
+.popup .signin .forget .Thir.active{
+    transform: scale(1) translate(-50% , -50%);
+    opacity: 1;
+    z-index: 9;
+    transition: all 0.5s ease-in-out;
+}
+/* popup section signin */
+
+/* popup section signup */
+
+.popup .signin .signup {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    z-index: -1;
+    transform: scale(.9) translateX(-220px);
+    opacity: 0;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+}
+.popup .signin .signup.active{
+    transform: scale(1) translateX(-50%);
+    opacity: 1;
+    z-index: 9;
+    transition: all 0.5s ease-in-out;
+}
+.popup .signin .signup .first{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    opacity: 0;
+    width: 80%;
+    border-radius: 20px;
+    padding: 0px 15px 10px;
+    transition: all 0.5s ease-in-out;
+    background-color: var(--gray-light-color);
+}
+.popup .signin .signup .first.active{
+    opacity: 1;
+    z-index: 9;
+    transition: all 0.5s ease-in-out;
+}
+.popup .signin .signup .first .prag{
+    width: 100%;
+    text-align: left;
+    margin-block: 22px; 
+}
+.popup .signin .signup .first .prag h2{
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 12px;
+    color: var(--main-color);
+}
+.popup .signin .signup .first .prag p{
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--gray-color);
+}
+.popup .signin .signup .first .checkdiv{
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+.popup .signin .signup .first .checkdiv input{
+    display: inline;
+    background-color: var(--gray-color) !important;
+    border: none !important;
+    outline: none !important;
+    width:20px;
+    height:20px;
+    margin-inline-end: 5px;
+}
+.popup .signin .signup .first .checkdiv label{
+    display: inline;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+}
+.popup .signin .signup .first .checkdiv label p{
+    display: inline;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: left;
+    color: var(--gray-color);
+}
+.popup .signin .signup .first .butt{
+    display: flex;
+    justify-content: flex-end;
+}
+.popup .signin .signup .first .butt .btn{
+    background-color: var(--gray-color);
+    color: var(--white-color);
+    border-radius: var(--radius-border);
+    border: 0;
+    padding: 5px 10px;
+    margin-block: 10px 10px ;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+.popup .signin .signup .first .butt .btn.active{
+    border: 0;
+    background-color: var(--main-blue-color);
+    pointer-events: painted;
+    transition: all 0.3s ease-in-out;
+}
+.popup .signin .signup .first .butt .btn.active:hover{
+    background-color: var(--main-color);
+}
+.popup .signin .signup .first .butt .btn .content{
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    margin-inline-end:10px ;
+}
+.popup .signin .signup .first .butt .btn .img-fluid img{
+    width: 16px;
+    margin-inline:2px ;
+}
+.popup .signin .signup .first .butt .btn.active:hover .img-fluid img{
+    animation: updown 2.5s infinite ease-in-out;
+}
+.popup .signin .signup .second{
+    position: absolute;
+    top: 0;
+    left: 400px;
+    transform: translateX(-150px);
+    z-index: -1;
+    opacity: 0;
+    width: 55%;
+    border-radius: 20px;
+    padding: 0px 15px 10px;
+    transition: all 0.5s ease-in-out;
+}
+.popup .signin .signup .second.active{
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    z-index: 9;
+    transition: all 0.5s ease-in-out;
+}
+.popup .signin .signup .second .text{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+.popup .signin .signup .second .logos{
+    margin-block: 20px;
+}
+.popup .signin .signup .second .logos .image{
+    border: 1px solid var(--white-text-color);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    min-height: fit-content;
+    height: 82px;
+    opacity: .5;
+    transition: all .3s ease-in-out;
+}
+.popup .signin .signup .second .logos .image.active{
+    
+    border: 1px solid var(--gray-color);
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+.popup .signin .signup .second .logos .image:hover{
+    border: 1px solid var(--gray-color);
+}
+.popup .signin .signup .second .logos .image .img-fluid{
+    margin: 10px;
+}
+.popup .signin .signup .second .logos .image img{
+    width: 60px;
+}
+.popup .signin .signup .second form input{
+    margin-block: 8px;
+    border: 1px solid var(--main-color);
+    width: 100%;
+    padding: 9px;
+    border-radius: 8px;
+}
+.popup .signin .signup .second form input::placeholder{
+    color: var(--gray-color);
+    font-size: 14px;
+}
+.popup .signin .signup .second .butt{
+    margin-block-start: 20px;
+}
+.popup .signin .signup .second .butt .btn{
+    background-color: var(--main-blue-color);
+    color: var(--white-color);
+    border-radius: var(--radius-border);
+    border: 0;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+}
+.popup .signin .signup .second .butt .btn:hover{
+    background-color: var(--main-color);
+}
+.popup .signin .signup .second .butt .btn .content{
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-inline-end:5px ;
+}
+.popup .signin .signup .second .butt .btn .img-fluid img{
+    width: 20px;
+    margin-inline:2px ;
+}
+.popup .signin .signup .second .butt .btn:hover .img-fluid img{
+    animation: updown 2.5s infinite ease-in-out;
+}
+.popup .signin .signup .second .butt .btnup{
+    border: 1px solid var(--main-color);
+    color: var(--gray-color);
+    border-radius: 10px;
+    padding: 10px ;
+    transition: all 0.3s ease-in-out;
+}
+.popup .signin .signup .second .butt .btnup:hover{
+    border: 1px solid var(--dark-color);
+    color: var(--main-color);
+}
+.popup .signin .signup .second .butt .btnup .custom-file-label{
+    cursor: pointer;
+    padding-inline-end: 20px;
+}
+.popup .signin .signup .second .butt .btnup .content p{
+    font-family: "Poppins";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 0 !important;
+}
+.popup .signin .signup .second .butt .btnup .content .icon{
+    font-size: 16px !important;
+    padding-inline-start: 5px;
+}
+.popup .signin .signup .second .butt .btnup .image{
+    position: absolute;
+    display: inline-block;
+    margin-inline-start: 3px;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.popup .signin .signup .second .butt .btnup .image.active{
+    z-index: 8;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+}
+.popup .signin .signup .second .butt .btnup .img-fluid img{
+    width: 20px;
+    margin-inline:2px ;
+}
+.popup .signin .signup .second .alreadyAccount{
+    margin-block-start: 18px ;
+    width: fit-content;
+    margin-inline: auto;
+}
+.popup .signin .signup .second .alreadyAccount p{
+    position: relative;
+    color: var(--gray-color);
+    font-size: 14px;
+    line-height: 13px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.popup .signin .signup .second .alreadyAccount p:hover{
+    color: var(--main-blue-color);
+}
+.popup .signin .signup .second .alreadyAccount p::after{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--gray-color);
+}
+.popup .signin .signup .second .alreadyAccount p:hover:after{
+    background-color: var(--main-blue-color);
+}
+.popup .signin .signup .three{
+    position: absolute;
+    top: 0;
+    left: 400px;
+    transform: translateX(-150px) translateY(100%);
+    z-index: -1;
+    opacity: 0;
+    width: 60%;
+    border-radius: 20px;
+    padding: 15px 15px ;
+    transition: all 0.5s ease-in-out;
+    background-color: var(--gray-light-color);
+
+}
+.popup .signin .signup .three.active{
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    opacity: 1;
+    z-index: 9;
+    transition: all 0.5s ease-in-out;
+}
+.popup .signin .signup .three .text h2{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 13px;
+    margin-block-end: 25px;
+}
+.popup .signin .signup .three .text p{
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    color: var(--gray-color);
+}
+.popup .signin .signup .three .text p span{
+    font-size: 10px;
+    font-weight: 400;
+
+}
+/* popup section signup */
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.overlay.active{
+    display: block;
+    opacity: 1;
+    z-index: 8;
+}
+
+
+/* popup section */
+
+
+
+/* responsev */
+@media (max-width: 1399px) and (min-width: 1200px) {
+    .hero .top .image .img-fluid img {
+        width: 680px ;
+    }
+    .hero .top .image .text-1 {
+        bottom: 310px ;
+        left: 45px ;
+        transform: rotate(-32.61deg) ;
+    }
+    .hero .top .image .text-2 {
+        bottom: 365px ;
+        right: 85px ;
+        transform: rotate(12deg) ;
+    }
+    .hero .top .image .text-3 {
+        bottom: 142px ;
+        right: -18px ;
+        transform: rotate(68deg) ;
+    }
+    .hero .top .image .span {
+        font-size: 15px ;
+    }
+    .hero .top .content .img-fluid img {
+        margin-bottom: -28px ;
+        width: 363px ;
+    }
+    .hero .top .content .title {
+        font-size: 22px ;
+        line-height: 27px ;
+    }
+    .hero .top .content .subtitle {
+        font-size: 12px ;
+        line-height: 17px ;
+        padding-block: 22px ;
+    }
+    .hero .top .content .btn {
+        font-size: 25px ;
+        padding: 20px 15px ;
+    }
+    .hero .top .content {
+        margin-block-start: 184px ;
+    }
+    .hero .top {
+        margin: 0 auto ;
+        padding-right: 20px ;
+    }
+    .popup .signin .signup .first .prag p {
+        font-size: 11px;
+        line-height: 13px;
+        color: var(--gray-color);
+    }
+    .popup .signin .signup .second {
+        width: 66%;
+    }
+    .popup .signin .signup .second .logos {
+        margin-block: 10px;
+    }
+    .popup .signin .signup .second form input {
+        margin-block: 7px;
+        border: 1px solid var(--main-color);
+        width: 100%;
+        padding: 8px;
+        border-radius: 8px;
+    }
+    .popup .signin .signup .second .butt {
+        margin-block-start: 13px;
+    }
+    .popup .signin .signup .second .alreadyAccount {
+        margin-block-start: 15px;
+        width: fit-content;
+        margin-inline: auto;
+    }
+    .popup .signin .content .card-list .card .image img {
+        width: 50px;
+    }
+    .popup .signin .signup .three.active {
+        transform: translate(-50%, 50%);
+    }
+    .popup .signin .signup .three{
+        transform: translate(-50%, 50%);
+    }
+    .popup .signin .content .card-list .card .image {
+        width: 25%;
+    }
+    .popup .signin .content .card-list .card .content {
+        width: 75%;
+        padding-block-start: 12px;
+        padding-inline-start: 10px;
+        align-self: center;
+    }
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+    .hero .top .image .img-fluid img {
+        width: 563px;
+    }
+    .hero .top .image .text-1 {
+        bottom: 270px;
+        left: 28px;
+        transform: rotate(-32.61deg);
+    }
+    .hero .top .image .text-2 {
+        bottom: 300px;
+        right: 53px;
+        transform: rotate(15deg);
+    }
+    .hero .top .image .text-3 {
+        bottom: 125px;
+        right: -21px;
+        transform: rotate(68deg);
+    }
+    .hero .top .image .span {
+        font-size: 15px;
+    }
+    .hero .top .content .img-fluid img {
+        margin-left: -90px;
+        margin-bottom: -28px;
+        width: 363px;
+    }
+    .hero .top .content .title {
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .hero .top .content .subtitle {
+        font-size: 12px;
+        line-height: 17px;
+        padding-block: 22px;
+    }
+    .hero .top .content .btn {
+        font-size: 25px;
+        padding: 20px 15px;
+    }
+    .hero .top .content {
+        margin-block-start: 184px;
+    }
+    .hero .top {
+        margin: 0 auto ;
+        padding-right: 20px ;
+    }
+    .popup {
+        width: 100%;
+        height: 75%;
+    }
+}
+@media (max-width: 991px) and (min-width: 768px){
+    .container, .container-md, .container-sm {
+        max-width: 760px;
+    }
+    .hero .top .image .img-fluid img {
+        width: 422px;
+    }
+    .hero .top .image .text-1 {
+        bottom: 200px;
+        left: 10px;
+    }
+    .hero .top .image .text-2 {
+        bottom: 243px;
+        right: 48px;
+    }
+    .hero .top .image .text-3 {
+        bottom: 129px;
+        right: -17px;
+    }
+    .hero .top .image .span {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .hero .top .content .img-fluid img {
+        margin-left: -90px;
+        margin-bottom: -28px;
+        width: 363px;
+    }
+    .hero .top .content .title {
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .hero .top .content .subtitle {
+        font-size: 12px;
+        line-height: 17px;
+        padding-block: 22px;
+    }
+    .hero .top .content .btn {
+        font-size: 25px;
+        padding: 20px 15px;
+    }
+    .hero .top .content {
+        margin-block-start: 184px;
+    }
+    .hero .top {
+        margin: 0 auto ;
+        padding-right: 20px ;
+    }
+    .hero .down {
+        font-size: 24px;
+    }
+    .popup {
+        width: 100%;
+        height: 75%;
+    }
+    .popup .left p {
+        margin-top: 180px;
+    }
+    .popup .signin .signup .second {
+        width: 65%;
+    }
+    .popup .signin .content .card-list .card .content p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 767px) and (min-width: 576px){
+    body {
+        height: 100%;
+        overflow: overlay;
+    }
+    .hero .top .content {
+        margin-block-start: 65px !important;
+        width: 100%;
+    }
+    .hero .top .image .img-fluid img {
+        width: 570px;
+    }
+    .hero .top .image .text-1 {
+        bottom: 255px;
+        left: 37px;
+    }
+    .hero .top .image .text-2 {
+        bottom: 303px;
+        right: 36px;
+    }
+    .hero .top .image .text-3 {
+        right: -11px;
+    }
+    .hero .top .image .span {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .hero .top .content {
+        margin-block-start: 0px;
+    }
+    .hero .top .content .img-fluid img {
+        width: 400px;
+    }
+    .hero .top .content .title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .hero .top .content .subtitle {
+        font-size: 12px;
+        line-height: 17px;
+        padding-block: 22px;
+    }
+    .hero .top .content .btn {
+        font-size: 37px;
+        padding: 21px 100px;
+        margin-block-start: 19px;
+    }
+    .hero .top .content {
+        margin-block-start: 184px;
+    }
+    .hero .top {
+        margin: 0 auto ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .hero .top .image {
+        position: relative;
+        overflow: overlay;
+        width: 107%;
+        min-height: 477px;
+        margin-block-start: 90px;
+    }
+    .hero .down {
+        font-size: 20px;
+        bottom: -31%;
+    }
+    .popup {
+        width: 100%;
+        height: 75%;
+    }
+    .popup .left {
+        display: none;
+    }
+    .popup .signin {
+        width: 100%;
+    }
+    .popup .signin .signup .three.active {
+        transform: translate(-50%, 50%);
+    }
+    .popup .signin .signup .three {
+        transform: translate(-50%, 50%);
+        width: 90%;
+    }
+    .popup .signin .signup .three .text h2 {
+        font-size: 20px;
+    }
+    .popup .signin .signup .three .text p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .popup .signin .signup .three .text p span {
+        font-size: 14px;
+    }
+}
+@media (max-width: 575px) and (min-width: 387px) {
+    header .img-fluid{
+        display: flex;
+        justify-content: center;
+    }
+    header .img-fluid img {
+        margin-block-start: 32px;
+        width: 167px;
+    }
+    body {
+        height: 100%;
+        overflow: overlay;
+    }
+    .hero .top .content {
+        margin-block-start: 43px !important;
+        width: 100%;
+    }
+    .hero .top .image .img-fluid {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .hero .top .image .img-fluid img {
+        width: 395px;
+        margin-inline: auto ;
+    }
+    .hero .top .image .text-1 {
+        bottom: 176px;
+        left: 21px;
+    }
+    .hero .top .image .text-2 {
+        bottom: 213px;
+        right: 49px;
+    }
+    .hero .top .image .text-3 {
+        right: -2px;
+        bottom: 99px;
+    }
+    .hero .top .image .span {
+        font-size: 10px;
+        line-height: 11px;
+        padding: 4px;
+    }
+    .hero .top .content .img-fluid img {
+        width: 320px;
+        margin-bottom: -23px;
+        margin-left: -73px;
+    }
+    .hero .top .content .title {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .hero .top .content .subtitle {
+        font-size: 10px;
+        line-height: 12px;
+        padding-block: 23px 14px;
+    }
+    .hero .top .content .btn {
+        font-size: 28px;
+        padding: 17px 100px;
+        margin-block-start: 19px;
+    }
+    .hero .top {
+        margin: 0 auto ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .hero .top .image {
+        position: relative;
+        overflow: overlay;
+        width: 387px;
+        min-height: 343px;
+        margin-block-start: 45px;
+    }
+    .hero .down {
+        font-size: 20px;
+        bottom: 0%;
+    }
+    .popup {
+        width: 100%;
+        height: 75%;
+    }
+    .popup .left {
+        display: none;
+    }
+    .popup .signin {
+        width: 100%;
+    }
+    .popup .signin .content .card-list {
+        width: 90%;
+    }
+    .popup .signin .signLogo .content form {
+        width: 90%;
+    }
+    .popup .signin .forget .content form {
+        width: 90%;
+    }
+    .popup .signin .signup .first .prag h2 {
+        font-size: 18px;
+    }
+    .popup .signin .signup .first .prag p {
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .popup .signin .signup .first .checkdiv {
+        margin-block-start: 60px;
+    }
+    .popup .signin .signup .first .checkdiv label p {
+        font-size: 10px;
+    }
+    .popup .signin .signup .second {
+        width: 85%;
+    }
+    .popup .signin .signup .three.active {
+        transform: translate(-50%, 50%);
+    }
+    .popup .signin .signup .three {
+        transform: translate(-50%, 50%);
+        width: 90%;
+    }
+}
+@media (max-width: 386px){
+    header .img-fluid{
+        display: flex;
+        justify-content: center;
+    }
+    header .img-fluid img {
+        margin-block-start: 32px;
+        width: 167px;
+    }
+    body {
+        height: 100%;
+        overflow: overlay;
+    }
+    .hero .top .content {
+        margin-block-start: 43px !important;
+        width: 100%;
+    }
+    .hero .top .image .img-fluid {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .hero .top .image .img-fluid img {
+        width: 331px;
+        margin-inline: -16px 0px;
+    }
+    .hero .top .image .text-1 {
+        bottom: 146px;
+        left: -6px;
+    }
+    .hero .top .image .text-2 {
+        bottom: 172px;
+        right: 15px;
+    }
+    .hero .top .image .text-3 {
+        right: -15px;
+        bottom: 97px;
+    }
+    .hero .top .image .span {
+        font-size: 10px;
+        line-height: 11px;
+        padding: 7px;
+    }
+    .hero .top .content .img-fluid img {
+        width: 320px;
+        margin-bottom: -23px;
+        margin-left: -73px;
+    }
+    .hero .top .content .title {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .hero .top .content .subtitle {
+        font-size: 10px;
+        line-height: 12px;
+        padding-block: 23px 14px;
+    }
+    .hero .top .content .btn {
+        font-size: 28px;
+        padding: 17px 100px;
+        margin-block-start: 19px;
+    }
+    .hero .top {
+        margin: 0 auto ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .hero .top .image {
+        position: relative;
+        overflow: overlay;
+        width: 300px;
+        min-height: 343px;
+        margin-block-start: 45px;
+    }
+    .hero .down {
+        font-size: 20px;
+        bottom: 0%;
+    }
+    .popup {
+        width: 100%;
+        height: 75%;
+    }
+    .popup .left {
+        display: none;
+    }
+    .popup .signin {
+        width: 100%;
+    }
+    .popup .signin .content .card-list {
+        width: 90%;
+    }
+    .popup .signin .signLogo .content form {
+        width: 90%;
+    }
+    .popup .signin .forget .content form {
+        width: 90%;
+    }
+    .popup .signin .signup .first .prag h2 {
+        font-size: 18px;
+    }
+    .popup .signin .signup .first .prag p {
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .popup .signin .signup .first .checkdiv {
+        margin-block: 60px 20px;
+    }
+    .popup .signin .signup .first .checkdiv label p {
+        font-size: 10px;
+    }
+    .popup .signin .signup .second {
+        width: 85%;
+    }
+    .popup .signin .content .text {
+        font-size: 13px;
+    } 
+    .popup .signin .signup .second .logos .image {
+        height: 67px;
+    }
+    .popup .signin .signup .second .logos .image img {
+        width: 45px;
+    }
+    .popup .signin .signup .second .butt .btnup .custom-file-label {
+        font-size: 12px;
+    }
+    .popup .signin .signup .second .butt .btn .content {
+        font-size: 13px;
+    }
+    .popup .signin .signup .second .butt .btn .img-fluid img {
+        width: 13px;
+        margin-inline: 0px;
+    }
+    .popup .signin .signup .three.active {
+        transform: translate(-50%, 50%);
+    }
+    .popup .signin .signup .three {
+        transform: translate(-50%, 50%);
+        width: 90%;
+    }
+}
