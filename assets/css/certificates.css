@@ -1,0 +1,134 @@
+:root {
+  /* color */
+  --main-color: #0f3464;
+  --main-light-color: #5c96fe;
+  --main-blue-color: #1758ad;
+  --main-extra-light-color: #e7faff;
+  --danger-color: #eb0c0c;
+  --success-color: #61f899;
+  --success-dark-color: #42b26b;
+  --orange-color: #e1322d;
+  --orange-light-color: #f06561;
+  --gray-color: #696969;
+  --gray-light-color: #f4f0f0;
+  --gray-text-color: #999999;
+  --white-text-color: #d9d9d9;
+  --white-color: #fff;
+  --dark-color: #181818;
+
+  /* radius */
+  --radius-full: 50%;
+  --radius-border: 50rem;
+}
+
+/********************************************/
+
+/* English Certificate */
+
+
+#certificate-type-wrapper {
+  border: 2px solid var(--success-color);
+  border-radius: 10px;
+  background-color: var(--white-color);
+}
+#certificate-type-wrapper .title {
+  color: var(--main-blue-color);
+  font-weight: bold;
+}
+#certificate-type-wrapper div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.certificate-type {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  width: fit-content;
+  border: 2px solid transparent;
+  color: var(--main-color);
+  background-color: transparent;
+  cursor: pointer;
+  transition: .3s;
+}
+.certificate-type:hover {
+  border: 2px solid var(--main-blue-color);
+}
+.certificate-type.active {
+  background-color: var(--main-color);
+  color: var(--main-extra-light-color);
+}
+.certificate-type div div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.custom-radio {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--white-color);
+  border-radius: 50%;
+  background-color: var(--gray-text-color);
+}
+.custom-radio::after {
+  position: absolute;
+  content: "";
+  top: 0.5px;
+  left: 10px;
+  width: 8px;
+  height: 18px;
+  border-right: 2px solid var(--white-color);
+  border-bottom: 2px solid var(--white-color);
+  transform: rotate(45deg);
+}
+.radio-input {
+  appearance: none;
+}
+.radio-input:checked + .custom-radio {
+  background-color: var(--success-dark-color);
+}
+
+#embassy-wrapper {
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+}
+#embassy-wrapper p {
+  margin-left: 20px;
+}
+
+#form-select {
+  border: 2px solid var(--main-blue-color);
+  font-size: 1.5rem;
+}
+#form-select option {
+  background-color: var(--gray-light-color-color);
+}
+
+#remarks-wrapper input {
+  border: 1px solid var(--main-blue-color);
+  padding-block: 10px;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+#remarks-wrapper input:focus {
+  border: 2px solid var(--main-blue-color);
+}
+
+#submit-btn {
+  background-color: var(--main-light-color);
+  color: var(--white-text-color);
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+#submit-btn:hover {
+  background-color: var(--main-blue-color);
+}
+#submit-btn:active {
+  transform: scale(0.9);
+}
+
+
+/* ********************************* */
