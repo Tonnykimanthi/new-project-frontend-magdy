@@ -38,7 +38,7 @@
 #certificate-type-wrapper div {
   display: flex;
   flex-direction: column;
-  row-gap: 5px;
+  row-gap: 8px;
 }
 .certificate-type {
   display: flex;
@@ -65,13 +65,14 @@
 }
 
 .custom-radio {
+  flex-shrink: 0;
   display: block;
   position: relative;
   width: 30px;
   height: 30px;
   border: 2px solid var(--white-color);
   border-radius: 50%;
-  background-color: var(--gray-text-color);
+  background-color: var(--white-text-color);
 }
 .custom-radio::after {
   position: absolute;
@@ -132,3 +133,11 @@
 
 
 /* ********************************* */
+
+/* My Certificates */
+
+#certificates-list-wrapper h3{
+  background-color: var(--white-color);
+  color: var(--main-blue-color);
+  font-weight: bold;
+}
