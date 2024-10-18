@@ -24,29 +24,29 @@
 /********************************************/
 
 /* Head */
-.header-pagination-wrapper{
+.header-pagination-wrapper {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header-pagination-wrapper .pagination{
+.header-pagination-wrapper .pagination {
   display: flex;
   gap: 10px;
 }
-.header-pagination-wrapper .pagination a{
+.header-pagination-wrapper .pagination a {
   font-size: 2rem;
   color: var(--gray-color);
   text-decoration: none;
   font-weight: bold;
 }
-.header-pagination-wrapper .pagination .active-link{
+.header-pagination-wrapper .pagination .active-link {
   color: var(--main-color);
 }
-.header-pagination-wrapper .pagination span{
+.header-pagination-wrapper .pagination span {
   font-size: 2rem;
 }
-.header-pagination-wrapper .image img{
+.header-pagination-wrapper .image img {
   width: 60px;
   height: 40px;
   object-fit: cover;
@@ -54,7 +54,6 @@
 }
 
 /* ENGLISH CERTIFICATE */
-
 
 #certificate-type-wrapper {
   border: 2px solid var(--success-color);
@@ -79,7 +78,7 @@
   color: var(--main-color);
   background-color: transparent;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 .certificate-type:hover {
   border: 2px solid var(--main-blue-color);
@@ -161,113 +160,190 @@
   transform: scale(0.9);
 }
 
-
 /* ********************************* */
 
 /* MY CERTIFICATE */
 
-#certificates-list-wrapper h3{
+#certificates-list-wrapper h3 {
   background-color: var(--white-color);
   color: var(--main-blue-color);
   font-weight: bold;
 }
-#certificates-list-wrapper .table-wrapper{
+#certificates-list-wrapper .table-wrapper {
   position: relative;
   overflow-x: scroll;
 }
-#certificates-list-wrapper .table-wrapper{
-  -ms-overflow-style: none; 
+#certificates-list-wrapper .table-wrapper {
+  -ms-overflow-style: none;
   scrollbar-width: none;
 }
-#certificates-list-wrapper .table-wrapper::-webkit-scrollbar{
+#certificates-list-wrapper .table-wrapper::-webkit-scrollbar {
   display: none;
 }
 #certificates-list-wrapper .table-wrapper table {
   font-size: 1.3rem;
 }
-#certificates-list-wrapper table thead{
+#certificates-list-wrapper table thead {
   border: 1px solid var(--gray-color);
   background-color: transparent;
 }
-#certificates-list-wrapper table thead th{
+#certificates-list-wrapper table thead th {
   text-align: center;
   vertical-align: middle;
   color: var(--main-blue-color);
   background-color: transparent;
   font-weight: 600;
 }
-#certificates-list-wrapper table tbody{
+#certificates-list-wrapper table tbody {
   background-color: var(--white-color);
 }
 
-#certificates-list-wrapper table tbody td{
+#certificates-list-wrapper table tbody td {
   text-align: center;
   vertical-align: middle;
   color: var(--main-color);
   border: 1px solid var(--main-color);
   background-color: var(--white-color);
 }
-#certificates-list-wrapper table tbody div{
+#certificates-list-wrapper table tbody div {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-#certificates-list-wrapper table tbody td a{
+#certificates-list-wrapper table tbody td a {
   color: var(--dark-color);
   padding: 5px;
   border-radius: 20px;
-  transition: .3s;
+  transition: 0.3s;
 }
-#certificates-list-wrapper table tbody td a.approved{
+#certificates-list-wrapper table tbody td a.approved {
   background-color: var(--success-color);
 }
-#certificates-list-wrapper table tbody td a.approved:hover{
+#certificates-list-wrapper table tbody td a.approved:hover {
   background-color: var(--success-dark-color);
 }
-#certificates-list-wrapper table tbody td a.pending{
+#certificates-list-wrapper table tbody td a.pending {
   background-color: yellow;
 }
-#certificates-list-wrapper table tbody td a.pending:hover{
+#certificates-list-wrapper table tbody td a.pending:hover {
   background-color: yellowgreen;
 }
-#certificates-list-wrapper table tbody td a.returned{
+#certificates-list-wrapper table tbody td a.returned {
   background-color: var(--orange-light-color);
 }
-#certificates-list-wrapper table tbody td a.returned:hover{
+#certificates-list-wrapper table tbody td a.returned:hover {
   background-color: var(--orange-color);
 }
 
-
-
 /* ********** MY CERTIFICATE APPROVED ********** */
 
-.certificate-item-container{
+.certificate-item-container {
   padding: 4em;
 }
-.certificate-item-container .certificate-item-head{
- display: flex;
- align-items: center;
- justify-content: end;
- gap: 1em;
+.certificate-item-container .certificate-item-head {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1em;
 }
-.certificate-item-container .certificate-viewer-container{
+.certificate-item-container .certificate-viewer-container {
   margin-top: 2rem;
   background-color: var(--white-text-color);
   height: 100vh; /* To be removed */
 }
-.certificate-item-container .certificate-item-head button img{
+.certificate-item-container .certificate-item-head button img {
   width: 50px;
   height: 50px;
   background-color: var(--main-blue-color);
 }
 
-
 /* ********** MY CERTIFICATE RETURNED ********** */
-.certificate-item-container .certificate-item-head .return-reason-btn{
+.certificate-item-container .certificate-item-head .return-reason-btn {
   padding: 0.5em;
   font-size: 1.8rem;
   border-radius: 10px;
   color: var(--white-text-color);
   background-color: var(--danger-color);
+}
+
+.return-reason-wrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.return-reason-wrapper article {
+  margin-top: 5em;
+  max-width: 50%;
+  padding: 5em;
+  border-radius: 10px;
+  background-color: var(--white-color);
+}
+.return-reason-wrapper article h3 {
+  color: var(--main-blue-color);
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+.return-reason-wrapper article p {
+  margin-block: 1.5em;
+  color: var(--main-blue-color);
+  font-size: large;
+}
+.select-reasons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.select-reasons-container label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: medium;
+  font-weight: 500;
+  cursor: pointer;
+}
+.select-reasons-container label input[type="checkbox"] {
+  display: none;
+}
+.select-reasons-container label .custom-checkbox {
+  flex-shrink: 0;
+  border: 1px solid var(--main-blue-color);
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  transition: 0.3s;
+}
+.select-reasons-container label .custom-checkbox:hover {
+  border: 1px solid var(--success-color);
+  background-color: var(--success-color);
+}
+.select-reasons-container
+  label
+  input[type="checkbox"]:checked
+  + .custom-checkbox {
+  border: 1px solid var(--success-color);
+  background-color: var(--success-color);
+}
+
+.return-reason-wrapper .reasons-label{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 1em;
+  color: var(--main-blue-color);
+  font-size: large;
+  font-weight: bold;
+}
+.return-reason-wrapper .reasons-label span{
+  font-weight: normal;
+}
+.return-reason-wrapper .reasons-input{
+  padding-block: 1em;
+  border-radius: 5px;
 }
