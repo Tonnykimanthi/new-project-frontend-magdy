@@ -329,20 +329,20 @@
 
       <main>
         <article class="container">
-          <section class="head">
-            <div class="title">
+          <section class="header-pagination-wrapper">
+            <div class="pagination">
               <a href="employee.html">
                 <span>Employee</span>
               </a>
               <a href="index.html">
-                <p>Personal Certificates</p>
+                <span>Personal Certificates</span>
               </a>
-              <a href="englishCertificate.html">
-                <p>My Certificate</p>
+              <a href="myCertificates.html" class="active-link">
+                <span>My Certificates</span>
               </a>
               <span>|</span>
             </div>
-            <a href="employee.html" class="image">
+            <a href="index.html" class="image">
               <div class="img-fluid">
                 <img
                   src="../../../assets/images/sign-in/Back@3x.png"
@@ -407,16 +407,33 @@
           </section>
 
           <!-- List of Certificates -->
-          <section id="certificates-list-wrapper" class="">
-            <h3 class="title p-4">My Certificates</h3>
-
-
+          <section id="certificates-list-wrapper">
+            <h3 class="title p-4 my-3">My Certificates</h3>
+            <div class="table-wrapper">
+              <table class="table">
+                <thead>
+                  <th>Employee</th>
+                  <th>Type</th>
+                  <th>Employee Remark</th>
+                  <th>Submission Date</th>
+                  <th>Reviewer Name</th>
+                  <th>Review Date</th>
+                  <th>Reviewer Remarks</th>
+                  <th>Approval Name</th>
+                  <th>Approval Date</th>
+                  <th>Approval Remarks</th>
+                  <th>Status</th>
+                  <th class="control-column">Control</th>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+              </table>
+            </div>
           </section>
         </article>
       </main>
     </div>
-
-    
 
     <!-- bootstrap -->
     <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
