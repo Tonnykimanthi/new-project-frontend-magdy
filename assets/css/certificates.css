@@ -23,6 +23,10 @@
 
 /********************************************/
 
+.dashboard_kpi .number {
+  flex-shrink: 0;
+}
+
 /* Head */
 .header-pagination-wrapper {
   margin-top: 20px;
@@ -32,6 +36,7 @@
 }
 .header-pagination-wrapper .pagination {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 .header-pagination-wrapper .pagination a {
@@ -51,6 +56,21 @@
   height: 40px;
   object-fit: cover;
   border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .header-pagination-wrapper .pagination span {
+    font-size: 1.5rem;
+  }
+  .header-pagination-wrapper .image img {
+    width: 50px;
+    height: 30px;
+  }
+}
+@media (max-width: 540px) {
+  .header-pagination-wrapper .pagination span {
+    font-size: 1.2rem;
+  }
 }
 
 /* ENGLISH CERTIFICATE */
@@ -124,6 +144,9 @@
 #embassy-wrapper {
   border: 1px solid var(--main-color);
   border-radius: 10px;
+}
+#embassy-wrapper.hidden {
+  display: none;
 }
 #embassy-wrapper p {
   margin-left: 20px;
@@ -253,7 +276,7 @@
   justify-content: end;
   gap: 1em;
 }
-.certificate-item-container .certificate-viewer-container {
+.certificate-viewer-container {
   margin-top: 2rem;
   background-color: var(--white-text-color);
   height: 100vh; /* To be removed */
@@ -362,4 +385,43 @@
   .return-reason-wrapper article {
     padding: 2em;
   }
+}
+
+/* REVIEW CERTIFICATE APPROVAL */
+.confirm-return-container {
+  margin-top: 1em;
+  padding: 1.5em;
+  border-radius: 10px;
+  color: var(--white-text-color);
+  background-color: var(--main-color);
+}
+.confirm-return-container .submission-date p {
+  font-size: small;
+  margin: 0;
+}
+.confirm-return-container .btns-container {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 2em;
+  font-size: large;
+}
+.btns-container button {
+  padding-inline: 1em;
+  padding-block: 0.5em;
+  border-radius: 2em;
+  color: var(--white-color);
+  transition: 0.3s;
+}
+#confirm-certificate-btn {
+  background-color: var(--success-color);
+}
+#confirm-certificate-btn:hover {
+  background-color: var(--success-dark-color);
+}
+#return-to-sender-btn {
+  background-color: var(--orange-color);
+}
+#return-to-sender-btn:hover {
+  background-color: var(--danger-color);
 }
