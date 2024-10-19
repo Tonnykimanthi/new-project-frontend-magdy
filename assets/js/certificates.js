@@ -62,7 +62,6 @@ certificateTypes.forEach((certificateType) => {
 const tBodyEl = document.querySelector(
   "#certificates-list-wrapper table tbody"
 );
-
 certificates.forEach((certificate) => {
   const trEl = document.createElement("tr");
 
@@ -85,28 +84,83 @@ certificates.forEach((certificate) => {
                 </div>
             </td>
             <td>
-                <a href="#" class="nav-link ${
-                  certificate.status === "pending" ? "pending" : "approved"
-                }">View</a>
+                <a href="#" class="nav-link approval">Show</a>
             </td>
         </tr>
     `;
 
   function checkStatus() {
     const link = trEl.querySelector("a");
-    const imgSrc = trEl.querySelector("img")
-    if (certificate.status === "Approved") {
-      link.classList.add("approval");
-      imgSrc.src = "../../../assets/images/sign-in/Evaluated.png"
+    const imgSrc = trEl.querySelector("img");
+    
+    
+    if(window.location.href === "http://127.0.0.1:5500/Dashboard/employee/certificates/reviewCertificatesList.html"){
+      if (certificate.status === "Approved") {
+      link.classList.add("approved");
+      imgSrc.src = "../../../assets/images/sign-in/Evaluated.png";
     } else if (certificate.status === "Pending") {
-      link.classList.add("pending");
-      imgSrc.src = "../../../assets/images/sign-in/Pending.png"
+      link.classList.add("review");
+      link.innerText = "Review"
+      imgSrc.src = "../../../assets/images/sign-in/Pending.png";
     } else {
       link.classList.add("returned");
-      imgSrc.src = "../../../assets/images/sign-in/Returned.png"
+      imgSrc.src = "../../../assets/images/sign-in/Returned.png";
+    }
+    }else if(window.location.href === "http://127.0.0.1:5500/Dashboard/employee/certificates/approveCertificatesList.html"){
+      if (certificate.status === "Approved") {
+        link.classList.add("approved");
+        imgSrc.src = "../../../assets/images/sign-in/Evaluated.png";
+      } else if (certificate.status === "Pending") {
+        link.classList.add("approve");
+        link.innerText = "Approve"
+        imgSrc.src = "../../../assets/images/sign-in/Pending.png";
+      } else {
+        link.classList.add("returned");
+        imgSrc.src = "../../../assets/images/sign-in/Returned.png";
+      }
+    }else{
+      if (certificate.status === "Approved") {
+        link.classList.add("approved");
+        imgSrc.src = "../../../assets/images/sign-in/Evaluated.png";
+      } else if (certificate.status === "Pending") {
+        link.classList.add("pending");
+        imgSrc.src = "../../../assets/images/sign-in/Pending.png";
+      } else {
+        link.classList.add("returned");
+        imgSrc.src = "../../../assets/images/sign-in/Returned.png";
+      }
+
     }
   }
   checkStatus();
 
-  tBodyEl.appendChild(trEl);
+  if (tBodyEl) {
+    tBodyEl.appendChild(trEl);
+  }
 });
+
+// RETURN REASONS
+const returnReasonWrapper = document.querySelector(".return-reason-wrapper");
+const returnReasonArticle = document.querySelector(
+  ".return-reason-wrapper article"
+);
+const returnReasonBtn = document.getElementById("return-reason-btn");
+
+if (returnReasonBtn) {
+  returnReasonBtn.addEventListener("click", () => {
+    returnReasonWrapper.classList.remove("hidden");
+  });
+}
+
+document.addEventListener("click", (e) => {
+  if (
+    !returnReasonArticle.contains(e.target) &&
+    !returnReasonBtn.contains(e.target)
+  ) {
+    returnReasonWrapper.classList.add("hidden");
+  }
+});
+
+// REVIEW CERTIFICATES LIST
+const currPage = window.location.href;
+console.log(currPage);
