@@ -407,7 +407,7 @@
           </section>
 
           <!-- View Certificate  -->
-          <section>
+          <section id="certificate-viewer-wrapper">
             <div class="certificate-viewer-container">
               <img src="" alt="">
             </div>
@@ -420,6 +420,104 @@
                 <button id="confirm-certificate-btn">Confirm Certificate</button>
                 <button id="return-to-sender-btn">Return To Sender</button>
               </div>
+            </div>
+
+            <!-- Certificate confirmation container -->
+             <div class="confirm-certificate-container hidden">
+              <article>
+                <h3>CONFIRM CERTIFICATE |</h3>
+                <P>Are you sure you have reviewed this certificate for information?</P>
+
+                <div class="confirm-remark-wrapper">
+                  <label for="remark">Remark</label>
+                  <input type="text" placeholder="Remark" id="remark" class="form-control">
+                </div>
+              </article>
+             </div>
+
+             <!-- Return reason section -->
+             <div class="return-reason-wrapper hidden">
+              <article>
+                <h3>Return Certificate To Sender</h3>
+                <p>
+                  Here are 8 common reasons to return to sender, and you can select
+                  one or more as guides to amend:
+                </p>
+    
+                <section class="select-reasons-container">
+                  <label for="incomplete-infomation">
+                    <input type="checkbox" id="incomplete-infomation" />
+                    <span class="custom-checkbox"></span>
+                    <span
+                      >Incomplete information: The employee has not provided all the
+                      necessary details required for processing the
+                      certificate.</span
+                    >
+                  </label>
+                  <label for="invalid-purpose">
+                    <input type="checkbox" id="invalid-purpose" />
+                    <span class="custom-checkbox"></span>
+                    <span
+                      >Invalid Purpose: The reason provided for the certificate
+                      request does not meet the criteria for issuance.</span
+                    >
+                  </label>
+                  <label for="document-format-issue">
+                    <input type="checkbox" id="document-format-issue" />
+                    <span class="custom-checkbox"></span>
+                    <span
+                      >Document Format Issue: The format requested for the
+                      certificate is not supported by the company's standard
+                      documentation.</span
+                    >
+                  </label>
+                  <label for="request-outside-of-policy">
+                    <input type="checkbox" id="request-outside-of-policy" />
+                    <span class="custom-checkbox"></span>
+                    <span
+                      >Request Outside Of Policy: The certificate requested is
+                      outside the company's policy for issuance or the type of
+                      certificate is not provided.</span
+                    >
+                  </label>
+                  <label for="supporting-documents-missing">
+                    <input type="checkbox" id="supporting-documents-missing" />
+                    <span class="custom-checkbox"></span>
+                    <span
+                      >Supporting Documents Missing: Any additional documents
+                      required to verify the certificate request are not
+                      attached.</span
+                    >
+                  </label>
+                  <label for="clarification-needed">
+                    <input type="checkbox" id="clarification-needed" />
+                    <span class="custom-checkbox"></span>
+                    <span
+                      >Clarification Needed: Further details or clarification are
+                      needed to process the request effectively.</span
+                    >
+                  </label>
+                  <label for="conflicting-request">
+                    <input type="checkbox" id="conflicting-request" />
+                    <span class="custom-checkbox"></span>
+                    <span
+                      >Conflicting Request: The employee has multiple overlapping or
+                      conflicting certificate requests.</span
+                    >
+                  </label>
+                  <label for="incorrect-employee-data">
+                    <input type="checkbox" id="incorrect-employee-data" />
+                    <span class="custom-checkbox"></span>
+                    <span
+                      >Incorrect Employee Data: The provided employee information is
+                      incorrect or does not match company records.</span
+                    >
+                  </label>
+                </section>
+    
+                <label for="reasons" class="reasons-label form-label">Reasons: <span> (Specify) </span></label>
+                <input type="text" placeholder="Reasons" id="reasons" class="reasons-input form-control"/>
+              </article>
             </div>
           </section>
         </article>

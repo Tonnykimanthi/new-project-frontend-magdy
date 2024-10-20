@@ -51,6 +51,9 @@ const certificateEmbassyInput = document.querySelector(
   "#certificate-type-wrapper #embassy"
 );
 const embassyWrapper = document.getElementById("embassy-wrapper");
+const successMessageToastWrapper = document.querySelector(".success-message-toast-wrapper")
+const successMessageToast = document.querySelector(".success-message-toast")
+const submitBtn = document.getElementById("submit-btn");
 
 certificateTypes.forEach((certificateType) => {
   const input = certificateType.children[1];
@@ -74,6 +77,22 @@ certificateTypeInputs.forEach((input) => {
     }
   });
 });
+
+if (submitBtn) {
+  submitBtn.addEventListener("click", () => {
+    successMessageToastWrapper.classList.remove("hidden");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (
+      !successMessageToast.contains(e.target) &&
+      !submitBtn.contains(e.target)
+    ) {
+      successMessageToastWrapper.classList.add("hidden");
+    }
+  });
+}
+
 
 // Display certificates list
 const tBodyEl = document.querySelector(
@@ -191,9 +210,43 @@ if (returnReasonBtn) {
 // REVIEW CERTIFICATES LIST
 
 const historyBackBtn = document.getElementById("history-back-link");
+const confirmCertificateBtn = document.getElementById("confirm-certificate-btn");
+const returnToSenderBtn = document.getElementById("return-to-sender-btn");
+const confirmCertificateContainer = document.querySelector(".confirm-certificate-container")
+const confirmCertificateContainerArticle = document.querySelector(".confirm-certificate-container article")
+// const returnReasonWrapper = document.querySelector(".return-reason-wrapper")
 
 if (historyBackBtn) {
   historyBackBtn.addEventListener("click", () => {
     history.back();
+  });
+}
+
+if (confirmCertificateBtn) {
+  confirmCertificateBtn.addEventListener("click", () => {
+    confirmCertificateContainer.classList.remove("hidden");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (
+      !confirmCertificateContainerArticle.contains(e.target) &&
+      !confirmCertificateBtn.contains(e.target)
+    ) {
+      confirmCertificateContainer.classList.add("hidden");
+    }
+  });
+}
+if (returnToSenderBtn) {
+  returnToSenderBtn.addEventListener("click", () => {
+    returnReasonWrapper.classList.remove("hidden");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (
+      !returnReasonArticle.contains(e.target) &&
+      !returnToSenderBtn.contains(e.target)
+    ) {
+      returnReasonWrapper.classList.add("hidden");
+    }
   });
 }
