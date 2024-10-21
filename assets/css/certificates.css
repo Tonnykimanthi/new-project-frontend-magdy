@@ -182,7 +182,7 @@
 #submit-btn:active {
   transform: scale(0.9);
 }
-.success-message-toast-wrapper{
+.success-message-toast-wrapper {
   position: fixed;
   inset: 0;
   display: flex;
@@ -193,10 +193,10 @@
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.2);
 }
-.success-message-toast-wrapper.hidden{
+.success-message-toast-wrapper.hidden {
   display: none;
 }
-.success-message-toast{
+.success-message-toast {
   width: 100%;
   height: fit-content;
   max-width: 800px;
@@ -204,11 +204,11 @@
   border-radius: 10px;
   border: 1px solid var(--gray-light-color);
 }
-.success-message-toast p{
+.success-message-toast p {
   background-color: var(--success-color);
   color: var(--gray-color);
   font-weight: 500;
-  padding: .5em;
+  padding: 0.5em;
   border-radius: 10px;
   font-size: small;
 }
@@ -225,6 +225,9 @@
 #certificates-list-wrapper .table-wrapper {
   position: relative;
   overflow-x: scroll;
+  border: 1px solid var(--gray-color);
+  background-color: var(--white-color);
+  border-radius: 10px;
 }
 #certificates-list-wrapper .table-wrapper {
   -ms-overflow-style: none;
@@ -235,10 +238,12 @@
 }
 #certificates-list-wrapper .table-wrapper table {
   font-size: 1.3rem;
+  table-layout: fixed;
+  min-width: 100%;
+  width: 1200px;
 }
 #certificates-list-wrapper table thead {
-  border: 1px solid var(--gray-color);
-  background-color: transparent;
+  background-color: var(--gray-light-color);
 }
 #certificates-list-wrapper table thead th {
   text-align: center;
@@ -246,22 +251,34 @@
   color: var(--main-blue-color);
   background-color: transparent;
   font-weight: 600;
+  padding: 0.5em;
 }
-#certificates-list-wrapper table tbody {
-  background-color: var(--white-color);
+#certificates-list-wrapper table thead th:last-child {
+  background-color: var(--gray-light-color);
 }
-
 #certificates-list-wrapper table tbody td {
   text-align: center;
   vertical-align: middle;
   color: var(--main-color);
-  border: 1px solid var(--main-color);
-  background-color: var(--white-color);
+  padding: 0.5em;
+  outline: 0.5px solid var(--gray-text-color);
 }
 #certificates-list-wrapper table tbody div {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.table-wrapper table thead th:last-child,
+.table-wrapper table tbody td:last-child {
+  position: sticky;
+  right: 0;
+  z-index: 2;
+}
+#certificates-list-wrapper table tbody td:last-child {
+  background-color: var(--white-color);
+  border-top: 1px solid var(--gray-light-color);
+  border-left: 1px solid var(--gray-light-color);
 }
 
 #certificates-list-wrapper table tbody td a {
@@ -493,6 +510,6 @@
   font-size: large;
 }
 
-#certificate-viewer-wrapper{
+#certificate-viewer-wrapper {
   position: relative;
 }
