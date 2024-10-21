@@ -75,7 +75,9 @@ certificateTypeInputs.forEach((input) => {
     if (input.id === "embassy") {
       embassyWrapper.classList.remove("hidden");
     } else {
-      embassyWrapper.classList.add("hidden");
+      if (embassyWrapper) {
+        embassyWrapper.classList.add("hidden");
+      }
     }
   });
 });
@@ -199,7 +201,6 @@ const returnConfirmationPopup = document.querySelector(
 const returnConfirmationYesBtn = document.querySelector(
   ".return-confirmation-popup button"
 );
-console.log(returnConfirmationYesBtn);
 
 if (returnReasonBtn) {
   returnReasonBtn.addEventListener("click", () => {
