@@ -424,8 +424,20 @@
               </label>
             </section>
 
-            <label for="reasons" class="reasons-label form-label">Reasons: <span> (Specify) </span></label>
-            <input type="text" placeholder="Reasons" id="reasons" class="reasons-input form-control"/>
+            <label for="reasons" class="reasons-label form-label"
+              >Reasons: <span> (Specify) </span></label
+            >
+            <input
+              type="text"
+              placeholder="Reasons"
+              id="reasons"
+              class="reasons-input form-control"
+            />
+            <button id="return-btn">Return</button>
+            <div class="return-confirmation-popup hidden">
+              <p>Are you sure you want to return this?</p>
+              <button>YES</button>
+            </div>
           </article>
         </div>
       </main>

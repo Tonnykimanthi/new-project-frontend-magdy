@@ -51,8 +51,10 @@ const certificateEmbassyInput = document.querySelector(
   "#certificate-type-wrapper #embassy"
 );
 const embassyWrapper = document.getElementById("embassy-wrapper");
-const successMessageToastWrapper = document.querySelector(".success-message-toast-wrapper")
-const successMessageToast = document.querySelector(".success-message-toast")
+const successMessageToastWrapper = document.querySelector(
+  ".success-message-toast-wrapper"
+);
+const successMessageToast = document.querySelector(".success-message-toast");
 const submitBtn = document.getElementById("submit-btn");
 
 certificateTypes.forEach((certificateType) => {
@@ -72,7 +74,7 @@ certificateTypeInputs.forEach((input) => {
   input.addEventListener("change", () => {
     if (input.id === "embassy") {
       embassyWrapper.classList.remove("hidden");
-    }else{
+    } else {
       embassyWrapper.classList.add("hidden");
     }
   });
@@ -92,7 +94,6 @@ if (submitBtn) {
     }
   });
 }
-
 
 // Display certificates list
 const tBodyEl = document.querySelector(
@@ -191,6 +192,14 @@ const returnReasonArticle = document.querySelector(
   ".return-reason-wrapper article"
 );
 const returnReasonBtn = document.getElementById("return-reason-btn");
+const returnBtn = document.getElementById("return-btn");
+const returnConfirmationPopup = document.querySelector(
+  ".return-confirmation-popup"
+);
+const returnConfirmationYesBtn = document.querySelector(
+  ".return-confirmation-popup button"
+);
+console.log(returnConfirmationYesBtn);
 
 if (returnReasonBtn) {
   returnReasonBtn.addEventListener("click", () => {
@@ -206,15 +215,31 @@ if (returnReasonBtn) {
     }
   });
 }
+if (returnBtn) {
+  returnBtn.addEventListener("click", () => {
+    returnConfirmationPopup.classList.remove("hidden");
+  });
+}
+if (returnConfirmationYesBtn) {
+  returnConfirmationYesBtn.addEventListener("click", () => {
+    returnConfirmationPopup.classList.add("hidden");
+    returnReasonWrapper.classList.add("hidden");
+  });
+}
 
 // REVIEW CERTIFICATES LIST
 
 const historyBackBtn = document.getElementById("history-back-link");
-const confirmCertificateBtn = document.getElementById("confirm-certificate-btn");
+const confirmCertificateBtn = document.getElementById(
+  "confirm-certificate-btn"
+);
 const returnToSenderBtn = document.getElementById("return-to-sender-btn");
-const confirmCertificateContainer = document.querySelector(".confirm-certificate-container")
-const confirmCertificateContainerArticle = document.querySelector(".confirm-certificate-container article")
-// const returnReasonWrapper = document.querySelector(".return-reason-wrapper")
+const confirmCertificateContainer = document.querySelector(
+  ".confirm-certificate-container"
+);
+const confirmCertificateContainerArticle = document.querySelector(
+  ".confirm-certificate-container article"
+);
 
 if (historyBackBtn) {
   historyBackBtn.addEventListener("click", () => {

@@ -409,7 +409,7 @@
           <!-- View Certificate  -->
           <section id="certificate-viewer-wrapper">
             <div class="certificate-viewer-container">
-              <img src="" alt="">
+              <img src="" alt="" />
             </div>
             <div class="confirm-return-container">
               <div class="submission-date">
@@ -417,40 +417,50 @@
                 <p>2023/08/12</p>
               </div>
               <div class="btns-container">
-                <button id="confirm-certificate-btn">Confirm Certificate</button>
+                <button id="confirm-certificate-btn">
+                  Confirm Certificate
+                </button>
                 <button id="return-to-sender-btn">Return To Sender</button>
               </div>
             </div>
 
             <!-- Certificate confirmation container -->
-             <div class="confirm-certificate-container hidden">
+            <div class="confirm-certificate-container hidden">
               <article>
                 <h3>CONFIRM CERTIFICATE |</h3>
-                <P>Are you sure you have reviewed this certificate for information?</P>
+                <p>
+                  Are you sure you have reviewed this certificate for
+                  information?
+                </p>
 
                 <div class="confirm-remark-wrapper">
                   <label for="remark">Remark</label>
-                  <input type="text" placeholder="Remark" id="remark" class="form-control">
+                  <input
+                    type="text"
+                    placeholder="Remark"
+                    id="remark"
+                    class="form-control"
+                  />
                 </div>
               </article>
-             </div>
+            </div>
 
-             <!-- Return reason section -->
-             <div class="return-reason-wrapper hidden">
+            <!-- Return reason section -->
+            <div class="return-reason-wrapper hidden">
               <article>
                 <h3>Return Certificate To Sender</h3>
                 <p>
-                  Here are 8 common reasons to return to sender, and you can select
-                  one or more as guides to amend:
+                  Here are 8 common reasons to return to sender, and you can
+                  select one or more as guides to amend:
                 </p>
-    
+
                 <section class="select-reasons-container">
                   <label for="incomplete-infomation">
                     <input type="checkbox" id="incomplete-infomation" />
                     <span class="custom-checkbox"></span>
                     <span
-                      >Incomplete information: The employee has not provided all the
-                      necessary details required for processing the
+                      >Incomplete information: The employee has not provided all
+                      the necessary details required for processing the
                       certificate.</span
                     >
                   </label>
@@ -493,30 +503,43 @@
                     <input type="checkbox" id="clarification-needed" />
                     <span class="custom-checkbox"></span>
                     <span
-                      >Clarification Needed: Further details or clarification are
-                      needed to process the request effectively.</span
+                      >Clarification Needed: Further details or clarification
+                      are needed to process the request effectively.</span
                     >
                   </label>
                   <label for="conflicting-request">
                     <input type="checkbox" id="conflicting-request" />
                     <span class="custom-checkbox"></span>
                     <span
-                      >Conflicting Request: The employee has multiple overlapping or
-                      conflicting certificate requests.</span
+                      >Conflicting Request: The employee has multiple
+                      overlapping or conflicting certificate requests.</span
                     >
                   </label>
                   <label for="incorrect-employee-data">
                     <input type="checkbox" id="incorrect-employee-data" />
                     <span class="custom-checkbox"></span>
                     <span
-                      >Incorrect Employee Data: The provided employee information is
-                      incorrect or does not match company records.</span
+                      >Incorrect Employee Data: The provided employee
+                      information is incorrect or does not match company
+                      records.</span
                     >
                   </label>
                 </section>
-    
-                <label for="reasons" class="reasons-label form-label">Reasons: <span> (Specify) </span></label>
-                <input type="text" placeholder="Reasons" id="reasons" class="reasons-input form-control"/>
+
+                <label for="reasons" class="reasons-label form-label"
+                  >Reasons: <span> (Specify) </span></label
+                >
+                <input
+                  type="text"
+                  placeholder="Reasons"
+                  id="reasons"
+                  class="reasons-input form-control"
+                />
+                <button id="return-btn">Return</button>
+                <div class="return-confirmation-popup hidden">
+                  <p>Are you sure you want to return this?</p>
+                  <button>YES</button>
+                </div>
               </article>
             </div>
           </section>

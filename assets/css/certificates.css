@@ -357,11 +357,13 @@
   display: none;
 }
 .return-reason-wrapper article {
+  position: relative;
   height: fit-content;
   max-width: 800px;
   padding: 5em;
   border-radius: 10px;
   background-color: var(--white-color);
+  animation: translateBottom 0.5s;
 }
 .return-reason-wrapper article h3 {
   color: var(--main-blue-color);
@@ -425,6 +427,59 @@
 .return-reason-wrapper .reasons-input {
   padding-block: 1em;
   border-radius: 5px;
+  font-size: small;
+}
+.return-reason-wrapper #return-btn {
+  margin-top: 2em;
+  margin-inline: auto;
+  padding-inline: 2em;
+  padding-block: 0.5em;
+  font-size: large;
+  border-radius: 10px;
+  color: var(--white-text-color);
+  background-color: var(--orange-color);
+  transition: all 0.3s;
+}
+.return-reason-wrapper #return-btn:hover {
+  background-color: var(--danger-color);
+}
+.return-reason-wrapper #return-btn:active {
+  scale: 0.9;
+}
+.return-reason-wrapper .return-confirmation-popup {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 500px;
+  padding: 1.5em;
+  border-radius: 10px;
+  height: fit-content;
+  font-size: large;
+  background-color: var(--white-color);
+  box-shadow: 0px 0px 31px -15px rgba(15, 52, 100, 1);
+  animation: translateTop 0.5s;
+}
+.return-confirmation-popup.hidden {
+  display: none;
+}
+.return-reason-wrapper .return-confirmation-popup p {
+  margin: 0;
+}
+.return-reason-wrapper .return-confirmation-popup button {
+  margin-left: auto;
+  padding-inline: 1em;
+  border-radius: 5px;
+  color: var(--white-text-color);
+  background-color: var(--orange-color);
+  transition: all 0.3s;
+}
+.return-reason-wrapper .return-confirmation-popup button:hover {
+  background-color: var(--danger-color);
+}
+.return-reason-wrapper .return-confirmation-popup button:active {
+  scale: 0.9;
 }
 
 @media (max-width: 768px) {
@@ -495,6 +550,8 @@
   padding: 2em;
   border-radius: 10px;
   background-color: var(--white-color);
+  opacity: 1;
+  animation: translateRight 0.5s;
 }
 .confirm-certificate-container article label {
   font-size: large;
@@ -512,4 +569,35 @@
 
 #certificate-viewer-wrapper {
   position: relative;
+}
+
+@keyframes translateRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes translateBottom {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes translateTop {
+  from {
+    bottom: 0%;
+    opacity: 0;
+  }
+  to {
+    bottom: 10%;
+    opacity: 1;
+  }
 }
